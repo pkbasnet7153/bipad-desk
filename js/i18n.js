@@ -11,6 +11,7 @@ const translations = {
     
     // Header & Hero
     btn_donate_online: "अनलाइन दान गर्नुहोस्",
+    btn_pm_report: "📊 राहत कोष प्रतिवेदन (Report of PM Fund)",
     btn_legal_info: "कानुनी जानकारी",
     hero_title: "नेपालका सबै बाढी, मौसम तथा विपद् पोर्टलहरू एकै ठाउँमा",
     hero_subtitle: "विभिन्न मन्त्रालय, विभाग र सुरक्षा निकायका छरिएका आधिकारिक वेबसाइटहरू खोज्न अब भौंतारिनु पर्दैन। यहाँबाट सिधै आधिकारिक मूल सरकारी (.gov.np) पोर्टलहरूमा जानुहोस्।",
@@ -82,6 +83,7 @@ const translations = {
 
     // Header & Hero
     btn_donate_online: "Donate Online",
+    btn_pm_report: "📊 Report of PM Fund",
     btn_legal_info: "Legal Info",
     hero_title: "Direct Access to Nepal Disaster, Weather & River Watch Portals",
     hero_subtitle: "An independent civic directory aggregating scattered official disaster, river watch, weather forecast, and emergency hotlines. All portal cards redirect safely to verified official .gov.np platforms.",

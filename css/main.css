@@ -208,6 +208,35 @@ input, textarea, select {
   transform: translateY(0);
 }
 
+.btn-report-trigger {
+  background: linear-gradient(135deg, #0D9488 0%, #0F766E 100%);
+  color: #FFFFFF !important;
+  border: none;
+  font-weight: 700;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(13, 148, 136, 0.28);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+  text-decoration: none;
+  font-family: inherit;
+}
+
+.btn-report-trigger:hover {
+  background: linear-gradient(135deg, #0F766E 0%, #115E59 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(13, 148, 136, 0.38);
+}
+
+.btn-report-trigger:active {
+  transform: translateY(0);
+}
+
 .btn-header-suggest {
   background-color: var(--gov-blue);
   color: #FFFFFF;
