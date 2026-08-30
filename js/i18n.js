@@ -25,7 +25,7 @@ const translations = {
     cat_disaster: "🚨 विपद् तथा घटना (Disaster Incidents)",
     cat_roads: "🚧 सडक तथा यातायात (Roads & Highways)",
     cat_dams: "⚡ बाँध तथा जलाशय (Dams & Reservoirs)",
-    cat_health: "🏥 स्वास्थ्य तथा सहयोग (Health & Donation)",
+    cat_health: "❤️ सहयोग गरौं (Lets Donate)",
     cat_hotlines: "📞 सुरक्षा तथा हटलाइन (Hotlines & S&R)",
 
     // Portal Card Actions
@@ -87,7 +87,7 @@ const translations = {
     cat_disaster: "🚨 Disaster Incidents",
     cat_roads: "🚧 Roads & Highways",
     cat_dams: "⚡ Dams & Reservoirs",
-    cat_health: "🏥 Health & Donation",
+    cat_health: "❤️ Lets Donate",
     cat_hotlines: "📞 Security & Hotlines",
 
     // Portal Card Actions
