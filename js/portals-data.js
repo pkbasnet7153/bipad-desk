@@ -93,12 +93,12 @@ const GOV_PORTALS = [
     ]
   },
 
-  // 1. Health, Relief, Blood Bank & PM Disaster Relief Fund
+  // 1. Health, Relief, Blood Bank & PM Disaster Relief Fund (Health & Donation)
   {
     id: 'pm-disaster-relief-fund',
     category: 'health',
-    categoryNameNe: 'स्वास्थ्य तथा राहत',
-    categoryNameEn: 'Health & Relief',
+    categoryNameNe: 'स्वास्थ्य तथा सहयोग',
+    categoryNameEn: 'Health & Donation',
     nameNe: 'प्रधानमन्त्री दैवी प्रकोप उद्धार कोष (PM Disaster Relief Fund)',
     nameEn: 'Prime Minister Disaster Relief Fund (PMDRF) Official Donation Gateway',
     departmentNe: 'प्रधानमन्त्री तथा मन्त्रिपरिषद्को कार्यालय (OPMCM)',
@@ -119,8 +119,8 @@ const GOV_PORTALS = [
   {
     id: 'heoc-health',
     category: 'health',
-    categoryNameNe: 'स्वास्थ्य तथा राहत',
-    categoryNameEn: 'Health & Relief',
+    categoryNameNe: 'स्वास्थ्य तथा सहयोग',
+    categoryNameEn: 'Health & Donation',
     nameNe: 'स्वास्थ्य आपतकालीन कार्यसञ्चालन केन्द्र (HEOC) - स्वास्थ्य मन्त्रालय',
     nameEn: 'Health Emergency Operation Center (HEOC) - Ministry of Health & Population',
     departmentNe: 'स्वास्थ्य तथा जनसंख्या मन्त्रालय (MoHP)',
@@ -140,8 +140,8 @@ const GOV_PORTALS = [
   {
     id: 'mohp-blood-bank',
     category: 'health',
-    categoryNameNe: 'स्वास्थ्य तथा राहत',
-    categoryNameEn: 'Health & Relief',
+    categoryNameNe: 'स्वास्थ्य तथा सहयोग',
+    categoryNameEn: 'Health & Donation',
     nameNe: 'स्वास्थ्य तथा जनसङ्ख्या मन्त्रालय - राष्ट्रिय रक्तसञ्चार तथा ब्लड बैंक स्थिति',
     nameEn: 'Ministry of Health (MoHP) - National Blood Bank Stock Status',
     departmentNe: 'स्वास्थ्य तथा जनसङ्ख्या मन्त्रालय (MoHP)',
@@ -161,8 +161,8 @@ const GOV_PORTALS = [
   {
     id: 'nrcs-disaster',
     category: 'health',
-    categoryNameNe: 'स्वास्थ्य तथा राहत',
-    categoryNameEn: 'Health & Relief',
+    categoryNameNe: 'स्वास्थ्य तथा सहयोग',
+    categoryNameEn: 'Health & Donation',
     nameNe: 'नेपाल रेडक्रस सोसाइटी - बाढी राहत, एम्बुलेन्स तथा आश्रय सेवा',
     nameEn: 'Nepal Red Cross Society (NRCS) - Flood Relief & Emergency Response',
     departmentNe: 'नेपाल रेडक्रस सोसाइटी केन्द्रीय कार्यालय',
