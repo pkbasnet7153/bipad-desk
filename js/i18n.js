@@ -19,6 +19,16 @@ const translations = {
     btn_quick_dial: "📞 आपतकालीन हटलाइन नम्बरहरू",
     btn_suggest: "➕ छुटेको सरकारी पोर्टल सिफारिस",
 
+    // Quick Sharing & Speed-Dial Bar
+    share_heading: "📢 विपद् प्रभावितहरूलाई यो निर्देशिका तुरुन्त सेयर गर्नुहोस्:",
+    btn_share_whatsapp: "💬 WhatsApp मा पठाउनुहोस्",
+    btn_share_viber: "💜 Viber मा पठाउनुहोस्",
+    btn_copy_share: "🔗 लिङ्क कपी",
+    toast_copied: "✅ निर्देशिकाको लिङ्क कपी गरियो!",
+    fab_emergency_text: "🚨 आपतकालीन कल (1-Tap)",
+    speed_dial_title: "२४/७ राष्ट्रिय आपतकालीन हटलाइनहरू (१-ट्याप कल)",
+    speed_dial_subtitle: "तत्काल सहायताका लागि कुनै पनि सेवामा थिच्नुहोस्:",
+
     // Categories
     cat_all: "🌐 सबै पोर्टलहरू",
     cat_missing: "🔍 हराएका/भेटिएका व्यक्ति (Missing & Found)",
@@ -90,6 +100,16 @@ const translations = {
     hero_badge: "🕊️ Open Civic Initiative | Verified Public Links Gateway",
     btn_quick_dial: "📞 Emergency Hotlines Desk",
     btn_suggest: "➕ Suggest Missing Portal",
+
+    // Quick Sharing & Speed-Dial Bar
+    share_heading: "📢 Share this emergency directory to help disaster-affected citizens:",
+    btn_share_whatsapp: "💬 Share on WhatsApp",
+    btn_share_viber: "💜 Share on Viber",
+    btn_copy_share: "🔗 Copy Link",
+    toast_copied: "✅ Directory Link Copied!",
+    fab_emergency_text: "🚨 Emergency Call (1-Tap)",
+    speed_dial_title: "24/7 National Emergency Hotlines (1-Tap Call)",
+    speed_dial_subtitle: "Tap any emergency service below to dial immediately:",
 
     // Categories
     cat_all: "🌐 All Portals",

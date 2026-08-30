@@ -124,4 +124,16 @@
     font-size: 0.75rem;
     padding: 8px 10px;
   }
+
+  .floating-emergency-fab {
+    bottom: 14px;
+    right: 14px;
+    padding: 10px 14px;
+    font-size: 0.82rem;
+  }
+
+  .speed-dial-grid {
+    grid-template-columns: 1fr;
+  }
 }
+

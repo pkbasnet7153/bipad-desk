@@ -1,0 +1,18 @@
+{
+  "name": "Bipad Desk (विपद् डेस्क) - Nepal Disaster Gateway",
+  "short_name": "Bipad Desk",
+  "description": "Unified civic directory for Nepal disaster, flood, weather, road status, and emergency response portals.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#F8FAFC",
+  "theme_color": "#0284C7",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "assets/bipad-logo.svg",
+      "sizes": "192x192 512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -911,3 +911,215 @@ input, textarea, select {
 .btn-copy-acc:hover {
   background-color: rgba(2, 132, 199, 0.1);
 }
+
+/* ==========================================================================
+   1-TAP DISASTER SHARING BAR (WHATSAPP, VIBER, COPY)
+   ========================================================================== */
+.hero-share-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.hero-share-label {
+  font-size: 0.82rem;
+  color: #E2E8F0;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.hero-share-btns {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.btn-share-wa {
+  background-color: #25D366;
+  color: #FFFFFF !important;
+  border: none;
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(37, 211, 102, 0.3);
+}
+
+.btn-share-wa:hover {
+  background-color: #1EBE5D;
+  transform: translateY(-1px);
+}
+
+.btn-share-vb {
+  background-color: #7360F2;
+  color: #FFFFFF !important;
+  border: none;
+  font-weight: 700;
+  font-size: 0.82rem;
+  padding: 6px 14px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+  cursor: pointer;
+  box-shadow: 0 2px 6px rgba(115, 96, 242, 0.3);
+}
+
+.btn-share-vb:hover {
+  background-color: #5E48E8;
+  transform: translateY(-1px);
+}
+
+.btn-share-copy {
+  background-color: rgba(255, 255, 255, 0.18);
+  color: #FFFFFF !important;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+  font-size: 0.82rem;
+  padding: 6px 12px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.btn-share-copy:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+/* ==========================================================================
+   FLOATING EMERGENCY SPEED-DIAL (MOBILE FAB)
+   ========================================================================== */
+.floating-emergency-fab {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
+  background: linear-gradient(135deg, #DC2626 0%, #991B1B 100%);
+  color: #FFFFFF;
+  border: none;
+  font-weight: 800;
+  font-size: 0.92rem;
+  padding: 12px 18px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 18px rgba(220, 38, 38, 0.5);
+  cursor: pointer;
+  transition: all var(--transition-normal);
+  animation: fabPulse 2s infinite ease-in-out;
+}
+
+.floating-emergency-fab:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #B91C1C 0%, #7F1D1D 100%);
+}
+
+@keyframes fabPulse {
+  0%, 100% {
+    box-shadow: 0 4px 18px rgba(220, 38, 38, 0.5);
+  }
+  50% {
+    box-shadow: 0 0 24px rgba(220, 38, 38, 0.8);
+  }
+}
+
+.modal-box-speed-dial {
+  max-width: 540px;
+  width: 95%;
+}
+
+.speed-dial-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.speed-dial-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bg-body);
+  border: 1.5px solid var(--border-color);
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  color: var(--text-primary);
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.speed-dial-item:hover {
+  border-color: #DC2626;
+  background-color: #FEF2F2;
+  transform: translateY(-1px);
+}
+
+.speed-dial-call-badge {
+  background-color: #DC2626;
+  color: #FFFFFF;
+  padding: 4px 10px;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* ==========================================================================
+   TOAST NOTIFICATION & OFFLINE INDICATOR
+   ========================================================================== */
+.toast-popup {
+  position: fixed;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%) translateY(20px);
+  background-color: #0F172A;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: var(--radius-full);
+  font-size: 0.88rem;
+  font-weight: 600;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.toast-popup.show {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.offline-banner {
+  display: none;
+  background-color: #92400E;
+  color: #FEF3C7;
+  text-align: center;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.offline-banner.active {
+  display: block;
+}

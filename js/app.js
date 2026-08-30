@@ -20,11 +20,26 @@ class DirectoryApp {
 
     // Initial render
     this.renderHotlines();
+    this.renderSpeedDial();
     this.renderPortals();
     this.updateStatsCounters();
+    this.setupSocialSharing();
 
     // Fetch live river warnings for ticker
     this.fetchLiveRiverTicker();
+
+    // Register PWA Service Worker for Offline access
+    this.registerServiceWorker();
+  }
+
+  registerServiceWorker() {
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js')
+          .then(reg => console.log('[PWA] Service Worker registered successfully:', reg.scope))
+          .catch(err => console.warn('[PWA] Service Worker registration failed:', err));
+      });
+    }
   }
 
   bindEvents() {
@@ -33,6 +48,7 @@ class DirectoryApp {
       btn.addEventListener('click', (e) => {
         const lang = e.currentTarget.dataset.lang;
         window.i18n.setLanguage(lang);
+        this.renderSpeedDial();
       });
     });
 
@@ -113,6 +129,86 @@ class DirectoryApp {
           donationModal.classList.remove('active');
         }
       });
+    }
+
+    // Speed-Dial Modal Handlers
+    const speedDialModal = document.getElementById('speed-dial-modal');
+    const openSpeedDialBtn = document.getElementById('btn-open-speed-dial');
+    const closeSpeedDialBtn = document.getElementById('btn-close-speed-dial');
+
+    if (openSpeedDialBtn && speedDialModal) {
+      openSpeedDialBtn.addEventListener('click', () => {
+        speedDialModal.classList.add('active');
+      });
+    }
+
+    if (closeSpeedDialBtn && speedDialModal) {
+      closeSpeedDialBtn.addEventListener('click', () => {
+        speedDialModal.classList.remove('active');
+      });
+    }
+
+    if (speedDialModal) {
+      speedDialModal.addEventListener('click', (e) => {
+        if (e.target === speedDialModal) {
+          speedDialModal.classList.remove('active');
+        }
+      });
+    }
+  }
+
+  setupSocialSharing() {
+    const pageUrl = window.location.href;
+    const shareText = "🚨 विपद् डेस्क (Bipad Desk) - नेपालका बाढी, नदी जलसतह, हराएका नागरिक, सडक अवस्था र २४/७ आपतकालीन हटलाइन (100, 1234, 1155) को आधिकारिक खुला निर्देशिका:\n" + pageUrl;
+
+    const waBtn = document.getElementById('btn-share-whatsapp');
+    if (waBtn) {
+      waBtn.href = `https://api.whatsapp.com/send?text=${encodeURIComponent(shareText)}`;
+    }
+
+    const vbBtn = document.getElementById('btn-share-viber');
+    if (vbBtn) {
+      vbBtn.href = `viber://forward?text=${encodeURIComponent(shareText)}`;
+    }
+
+    const copyBtn = document.getElementById('btn-copy-portal-link');
+    if (copyBtn) {
+      copyBtn.addEventListener('click', () => {
+        if (navigator.clipboard) {
+          navigator.clipboard.writeText(pageUrl);
+          this.showToast(window.i18n.t('toast_copied') || '✅ Link Copied!');
+        } else {
+          prompt('Copy Directory URL:', pageUrl);
+        }
+      });
+    }
+  }
+
+  renderSpeedDial() {
+    const container = document.getElementById('speed-dial-grid-container');
+    if (!container) return;
+
+    const lang = window.i18n ? window.i18n.getLang() : 'ne';
+    container.innerHTML = this.hotlines.map(h => `
+      <a href="tel:${h.number}" class="speed-dial-item">
+        <div>
+          <span>${h.icon}</span>
+          <strong style="margin-left: 6px;">${lang === 'ne' ? h.nameNe : h.nameEn}</strong>
+        </div>
+        <span class="speed-dial-call-badge">📞 ${h.number}</span>
+      </a>
+    `).join('');
+  }
+
+  showToast(message) {
+    const toast = document.getElementById('toast-notification');
+    const msgSpan = document.getElementById('toast-message');
+    if (toast && msgSpan) {
+      msgSpan.textContent = message;
+      toast.classList.add('show');
+      setTimeout(() => {
+        toast.classList.remove('show');
+      }, 2500);
     }
   }
 

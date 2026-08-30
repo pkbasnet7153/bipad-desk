@@ -3,6 +3,14 @@
         "endpoint": "river-stations\/?limit=100",
         "status": "SUCCESS",
         "statusCode": 200,
+        "duration_ms": 423.72,
+        "timestamp": "2026-08-31 01:44:12",
+        "count": 9223372036854775807
+    },
+    {
+        "endpoint": "river-stations\/?limit=100",
+        "status": "SUCCESS",
+        "statusCode": 200,
         "duration_ms": 2203.02,
         "timestamp": "2026-08-31 01:29:28",
         "count": 9223372036854775807
