@@ -93,7 +93,95 @@ const GOV_PORTALS = [
     ]
   },
 
-  // 1. River & Flood Monitoring
+  // 1. Health, Relief, Blood Bank & PM Disaster Relief Fund
+  {
+    id: 'pm-disaster-relief-fund',
+    category: 'health',
+    categoryNameNe: 'स्वास्थ्य तथा राहत',
+    categoryNameEn: 'Health & Relief',
+    nameNe: 'प्रधानमन्त्री दैवी प्रकोप उद्धार कोष (PM Disaster Relief Fund)',
+    nameEn: 'Prime Minister Disaster Relief Fund (PMDRF) Official Donation Gateway',
+    departmentNe: 'प्रधानमन्त्री तथा मन्त्रिपरिषद्को कार्यालय (OPMCM)',
+    departmentEn: 'Office of the Prime Minister and Council of Ministers (OPMCM)',
+    url: 'https://pmdrf.nchl.com.np/',
+    badge: 'GOV_OFFICIAL',
+    isGov: true,
+    status: 'ONLINE',
+    descriptionNe: 'नेपाल सरकारको आधिकारिक प्रधानमन्त्री दैवी प्रकोप उद्धार कोषमा कार्ड, क्युआर (Fonepay/NepalPay), र अन्तर्राष्ट्रिय SWIFT मार्फत विपद् पीडितहरूका लागि सिधै सहयोग पठाउने पोर्टल।',
+    descriptionEn: 'Official government portal to contribute to the Prime Minister Disaster Relief Fund via cards, QR codes (Fonepay/NepalPay/UPI), and international SWIFT wire transfers.',
+    featuresNe: ['अनलाइन कार्ड पेमेन्ट (NCHL/HBL)', 'Fonepay / NepalPay QR', 'SWIFT बैंक ट्रान्सफर', 'कर छुट सुविधा'],
+    featuresEn: ['Online Card Payment', 'Domestic QR & UPI', 'SWIFT Wire Transfer', 'Official Tax Exemption'],
+    quickLinks: [
+      { titleNe: 'NCHL पेमेन्ट गेटवे', titleEn: 'NCHL Payment Portal', url: 'https://pmdrf.nchl.com.np/' },
+      { titleNe: 'हिमालयन बैंक गेटवे', titleEn: 'HBL PMDRF Gateway', url: 'https://pmrelieffund.himalayanbank.com/' }
+    ]
+  },
+  {
+    id: 'heoc-health',
+    category: 'health',
+    categoryNameNe: 'स्वास्थ्य तथा राहत',
+    categoryNameEn: 'Health & Relief',
+    nameNe: 'स्वास्थ्य आपतकालीन कार्यसञ्चालन केन्द्र (HEOC) - स्वास्थ्य मन्त्रालय',
+    nameEn: 'Health Emergency Operation Center (HEOC) - Ministry of Health & Population',
+    departmentNe: 'स्वास्थ्य तथा जनसंख्या मन्त्रालय (MoHP)',
+    departmentEn: 'Ministry of Health and Population',
+    url: 'https://heoc.mohp.gov.np/',
+    badge: 'GOV_OFFICIAL',
+    isGov: true,
+    status: 'ONLINE',
+    descriptionNe: 'बाढीपछिको महामारी (झाडापखाला, हैजा, डेंगु) रोकथाम, आपतकालीन औषधि आपूर्ति, अस्थायी अस्पताल र चिकित्सक परिचालन।',
+    descriptionEn: 'Post-flood waterborne disease surveillance, emergency medical supplies distribution, mobile health camps, and hospital bed availability.',
+    featuresNe: ['महामारी पूर्वसूचना', 'आपतकालीन औषधि समन्वय', 'अस्पताल हटलाइन'],
+    featuresEn: ['Epidemic Surveillance', 'Emergency Medicines', 'Hospital Hotlines'],
+    quickLinks: [
+      { titleNe: 'स्वास्थ्य बुलेटिन', titleEn: 'Health Situation Reports', url: 'https://heoc.mohp.gov.np/' }
+    ]
+  },
+  {
+    id: 'mohp-blood-bank',
+    category: 'health',
+    categoryNameNe: 'स्वास्थ्य तथा राहत',
+    categoryNameEn: 'Health & Relief',
+    nameNe: 'स्वास्थ्य तथा जनसङ्ख्या मन्त्रालय - राष्ट्रिय रक्तसञ्चार तथा ब्लड बैंक स्थिति',
+    nameEn: 'Ministry of Health (MoHP) - National Blood Bank Stock Status',
+    departmentNe: 'स्वास्थ्य तथा जनसङ्ख्या मन्त्रालय (MoHP)',
+    departmentEn: 'Ministry of Health and Population (MoHP)',
+    url: 'https://freehealth.mohp.gov.np/blood-bank',
+    badge: 'GOV_OFFICIAL',
+    isGov: true,
+    status: 'ONLINE',
+    descriptionNe: 'बाढी, पहिरो तथा आपतकालीन घाइतेहरूको उपचारका लागि देशभरका अस्पताल र रेडक्रस रक्तसञ्चार केन्द्रहरूमा रगतको मौज्दात स्थिति हेर्ने आधिकारिक पोर्टल।',
+    descriptionEn: 'Official national dashboard tracking real-time blood group availability and stock in hospital blood banks and Red Cross transfusion centers across Nepal.',
+    featuresNe: ['रक्त समूह उपलब्धता', 'अस्पताल अनुसार मौज्दात', 'आपतकालीन सम्पर्क'],
+    featuresEn: ['Blood Group Availability', 'Hospital-wise Inventory', 'Emergency Transfusion Contacts'],
+    quickLinks: [
+      { titleNe: 'ब्लड बैंक मौज्दात हेर्नुहोस्', titleEn: 'Check Blood Availability', url: 'https://freehealth.mohp.gov.np/blood-bank' }
+    ]
+  },
+  {
+    id: 'nrcs-disaster',
+    category: 'health',
+    categoryNameNe: 'स्वास्थ्य तथा राहत',
+    categoryNameEn: 'Health & Relief',
+    nameNe: 'नेपाल रेडक्रस सोसाइटी - बाढी राहत, एम्बुलेन्स तथा आश्रय सेवा',
+    nameEn: 'Nepal Red Cross Society (NRCS) - Flood Relief & Emergency Response',
+    departmentNe: 'नेपाल रेडक्रस सोसाइटी केन्द्रीय कार्यालय',
+    departmentEn: 'Nepal Red Cross Society National Headquarters',
+    url: 'https://nrcs.org/',
+    badge: 'HUMANITARIAN_AUTHORITY',
+    isGov: false,
+    status: 'ONLINE',
+    descriptionNe: '७७ वटै जिल्लामा एम्बुलेन्स सेवा, प्राथमिक उपचार, रक्तसञ्चार (Blood Bank), अस्थायी त्रिपाल/राहत वितरण र शिविर व्यवस्थापन।',
+    descriptionEn: '77-district ambulance network, first-aid response, emergency blood banks, non-food relief distribution, and temporary shelter management.',
+    featuresNe: ['११३० हटलाइन', 'एम्बुलेन्स खोजी सेवा', 'रक्तसञ्चार सेवा', 'सामुदायिक राहत शिविर'],
+    featuresEn: ['1130 Hotline', 'Ambulance Finder', 'Blood Bank Service', 'Relief Camps'],
+    quickLinks: [
+      { titleNe: '११३० रेडक्रस कल', titleEn: 'Call Red Cross 1130', url: 'tel:1130' },
+      { titleNe: 'राहत कार्यक्रम', titleEn: 'NRCS Relief Operations', url: 'https://nrcs.org/' }
+    ]
+  },
+
+  // 2. River & Flood Monitoring
   {
     id: 'dhm-hydrology',
     category: 'river',
@@ -158,8 +246,6 @@ const GOV_PORTALS = [
       { titleNe: 'GeoApps पोर्टल', titleEn: 'ICIMOD GeoApps', url: 'https://geoapps.icimod.org/' }
     ]
   },
-
-  // 2. Weather & Rainfall Forecast
   {
     id: 'mfd-gov',
     category: 'weather',
@@ -203,8 +289,6 @@ const GOV_PORTALS = [
       { titleNe: 'वर्षा नक्सा हेर्नुहोस्', titleEn: 'Rainfall Map', url: 'https://bipadportal.gov.np/realtime/rain/' }
     ]
   },
-
-  // 3. National Disaster Management & Incident Reporting
   {
     id: 'bipad-main',
     category: 'disaster',
@@ -269,8 +353,27 @@ const GOV_PORTALS = [
       { titleNe: 'गृह मन्त्रालय सूचना', titleEn: 'MoHA Notices', url: 'https://moha.gov.np/' }
     ]
   },
-
-  // 4. Highways, Roads & Bridges Status
+  {
+    id: 'ndrrma-setu-damage',
+    category: 'disaster',
+    categoryNameNe: 'विपद् तथा घटना',
+    categoryNameEn: 'Disaster Incidents',
+    nameNe: 'राष्ट्रिय विपद् प्राधिकरण - सेतु द्रुत क्षति मूल्याङ्कन पोर्टल (SETU)',
+    nameEn: 'NDRRMA - SETU Rapid Post-Disaster Damage Assessment Portal',
+    departmentNe: 'राष्ट्रिय विपद् जोखिम न्यूनीकरण तथा व्यवस्थापन प्राधिकरण (NDRRMA)',
+    departmentEn: 'National Disaster Risk Reduction and Management Authority (NDRRMA)',
+    url: 'https://setu.ndrrma.gov.np/',
+    badge: 'GOV_OFFICIAL',
+    isGov: true,
+    status: 'ONLINE',
+    descriptionNe: 'विपद् पछिको भौतिक पूर्वाधार, निजी आवास र जनधनको क्षतिको द्रुत मूल्याङ्कन गरी राहत र पुनर्निर्माणको योजना बनाउन प्रयोग गरिने आधिकारिक सरकारी प्रणाली।',
+    descriptionEn: 'Official NDRRMA platform for rapid damage assessment of housing and public infrastructure to coordinate post-disaster recovery and reconstruction grants.',
+    featuresNe: ['द्रुत क्षति विवरण संकलन', 'पालिका स्तरको तथ्याङ्क', 'पुनर्निर्माण अनुदान ट्र्याकिङ'],
+    featuresEn: ['Rapid Damage Reporting', 'Municipal Field Data', 'Reconstruction Grant Tracking'],
+    quickLinks: [
+      { titleNe: 'SETU पोर्टल खोल्नुहोस्', titleEn: 'Open SETU Portal', url: 'https://setu.ndrrma.gov.np/' }
+    ]
+  },
   {
     id: 'dor-highway',
     category: 'roads',
@@ -298,32 +401,30 @@ const GOV_PORTALS = [
     categoryNameNe: 'सडक तथा यातायात',
     categoryNameEn: 'Roads & Highways',
     nameNe: 'नेपाल ट्राफिक प्रहरी - उपत्यका तथा राजमार्ग ट्राफिक अपडेट',
-    nameEn: 'Nepal Traffic Police - Live Highway Traffic & Road Advisory',
-    departmentNe: 'नेपाल प्रहरी प्रधान कार्यालय / ट्राफिक महाशाखा',
-    departmentEn: 'Nepal Police Headquarters / Traffic Directorate',
+    nameEn: 'Nepal Traffic Police - Highway & Valley Real-time Traffic Control',
+    departmentNe: 'नेपाल ट्राफिक प्रहरी निर्देशनालय',
+    departmentEn: 'Nepal Traffic Police Directorate',
     url: 'https://traffic.nepalpolice.gov.np/',
     badge: 'GOV_OFFICIAL',
     isGov: true,
     status: 'ONLINE',
-    descriptionNe: 'सवारी साधन आवागमनको पछिल्लो स्थिति, बाढी-पहिरोले रोकिएका गाडीहरूको डाइभर्सन र १०३ ट्राफिक हटलाइन।',
-    descriptionEn: 'Live vehicle movement advisories, flood/landslide diversions, highway convoy management, and 103 Traffic Helpline.',
-    featuresNe: ['१०३ हटलाइन कल', 'राजमार्ग ट्राफिक अवस्था', 'डाइभर्सन सूचना'],
-    featuresEn: ['103 Helpline', 'Highway Flow Status', 'Diversion Notices'],
+    descriptionNe: 'उपत्यका तथा लामो दुरीका सडकमा ट्राफिक जाम, बाढीले कटान गरेका पुल र वैकल्पिक डाइभर्सन (१०३ हटलाइन)।',
+    descriptionEn: 'Real-time road diversions, flooded bridge closures, Kathmandu valley choke points, and toll-free 103 hotline.',
+    featuresNe: ['१०३ ट्राफिक हटलाइन', 'सडक डाइभर्सन जानकारी', 'राजमार्ग जाम अपडेट'],
+    featuresEn: ['Dial 103 Hotline', 'Bridge Closures', 'Highway Jam Alerts'],
     quickLinks: [
-      { titleNe: '१०३ कल गर्नुहोस्', titleEn: 'Call Traffic 103', url: 'tel:103' }
+      { titleNe: '१०३ मा कल गर्नुहोस्', titleEn: 'Call Traffic 103', url: 'tel:103' }
     ]
   },
-
-  // 5. Dam & Hydropower Reservoir Level Alerts
   {
     id: 'nea-dams',
     category: 'dams',
     categoryNameNe: 'बाँध तथा जलाशय',
     categoryNameEn: 'Dams & Reservoirs',
-    nameNe: 'नेपाल विद्युत प्राधिकरण - कुलेखानी तथा मुख्य जलविद्युत बाँध सतर्कता',
-    nameEn: 'Nepal Electricity Authority (NEA) - Kulekhani & Major Dam Level Alerts',
-    departmentNe: 'नेपाल विद्युत प्राधिकरण (NEA) / ऊर्जा मन्त्रालय',
-    departmentEn: 'Nepal Electricity Authority / Ministry of Energy',
+    nameNe: 'नेपाल विद्युत प्राधिकरण - जलाशय तथा जलविद्युत बाँध अलर्ट',
+    nameEn: 'Nepal Electricity Authority (NEA) - Dam Water Levels & Sluice Gate Alerts',
+    departmentNe: 'नेपाल विद्युत प्राधिकरण (NEA)',
+    departmentEn: 'Nepal Electricity Authority',
     url: 'https://nea.org.np/',
     badge: 'GOV_OFFICIAL',
     isGov: true,
@@ -337,52 +438,7 @@ const GOV_PORTALS = [
     ]
   },
 
-  // 6. Health, Relief & Shelter Support
-  {
-    id: 'heoc-health',
-    category: 'health',
-    categoryNameNe: 'स्वास्थ्य तथा राहत',
-    categoryNameEn: 'Health & Relief',
-    nameNe: 'स्वास्थ्य आपतकालीन कार्यसञ्चालन केन्द्र (HEOC) - स्वास्थ्य मन्त्रालय',
-    nameEn: 'Health Emergency Operation Center (HEOC) - Ministry of Health & Population',
-    departmentNe: 'स्वास्थ्य तथा जनसंख्या मन्त्रालय (MoHP)',
-    departmentEn: 'Ministry of Health and Population',
-    url: 'https://heoc.mohp.gov.np/',
-    badge: 'GOV_OFFICIAL',
-    isGov: true,
-    status: 'ONLINE',
-    descriptionNe: 'बाढीपछिको महामारी (झाडापखाला, हैजा, डेंगु) रोकथाम, आपतकालीन औषधि आपूर्ति, अस्थायी अस्पताल र चिकित्सक परिचालन।',
-    descriptionEn: 'Post-flood waterborne disease surveillance, emergency medical supplies distribution, mobile health camps, and hospital bed availability.',
-    featuresNe: ['महामारी पूर्वसूचना', 'आपतकालीन औषधि समन्वय', 'अस्पताल हटलाइन'],
-    featuresEn: ['Epidemic Surveillance', 'Emergency Medicines', 'Hospital Hotlines'],
-    quickLinks: [
-      { titleNe: 'स्वास्थ्य बुलेटिन', titleEn: 'Health Situation Reports', url: 'https://heoc.mohp.gov.np/' }
-    ]
-  },
-  {
-    id: 'nrcs-disaster',
-    category: 'health',
-    categoryNameNe: 'स्वास्थ्य तथा राहत',
-    categoryNameEn: 'Health & Relief',
-    nameNe: 'नेपाल रेडक्रस सोसाइटी - बाढी राहत, एम्बुलेन्स तथा आश्रय सेवा',
-    nameEn: 'Nepal Red Cross Society (NRCS) - Flood Relief & Emergency Response',
-    departmentNe: 'नेपाल रेडक्रस सोसाइटी केन्द्रीय कार्यालय',
-    departmentEn: 'Nepal Red Cross Society National Headquarters',
-    url: 'https://nrcs.org/',
-    badge: 'HUMANITARIAN_AUTHORITY',
-    isGov: false,
-    status: 'ONLINE',
-    descriptionNe: '७७ वटै जिल्लामा एम्बुलेन्स सेवा, प्राथमिक उपचार, रक्तसञ्चार (Blood Bank), अस्थायी त्रिपाल/राहत वितरण र शिविर व्यवस्थापन।',
-    descriptionEn: '77-district ambulance network, first-aid response, emergency blood banks, non-food relief distribution, and temporary shelter management.',
-    featuresNe: ['११३० हटलाइन', 'एम्बुलेन्स खोजी सेवा', 'रक्तसञ्चार सेवा', 'सामुदायिक राहत शिविर'],
-    featuresEn: ['1130 Hotline', 'Ambulance Finder', 'Blood Bank Service', 'Relief Camps'],
-    quickLinks: [
-      { titleNe: '११३० रेडक्रस कल', titleEn: 'Call Red Cross 1130', url: 'tel:1130' },
-      { titleNe: 'राहत कार्यक्रम', titleEn: 'NRCS Relief Operations', url: 'https://nrcs.org/' }
-    ]
-  },
-
-  // 7. Security Forces & Emergency Search & Rescue
+  // 6. Security Forces & Emergency Search & Rescue
   {
     id: 'nepal-police',
     category: 'hotlines',
@@ -444,71 +500,6 @@ const GOV_PORTALS = [
     featuresEn: ['Toll-free 1155', '24/7 Automated IVR', 'Basin Level Audio Reports'],
     quickLinks: [
       { titleNe: '११५५ मा कल गर्नुहोस्', titleEn: 'Call 1155 Now', url: 'tel:1155' }
-    ]
-  },
-  // 7. PM RELIEF FUND & HEALTH SERVICES (From OPMCM & MoHP)
-  {
-    id: 'pm-disaster-relief-fund',
-    category: 'health',
-    categoryNameNe: 'स्वास्थ्य तथा राहत',
-    categoryNameEn: 'Health & Relief',
-    nameNe: 'प्रधानमन्त्री दैवी प्रकोप उद्धार कोष (PM Disaster Relief Fund)',
-    nameEn: 'Prime Minister Disaster Relief Fund (PMDRF) Official Donation Gateway',
-    departmentNe: 'प्रधानमन्त्री तथा मन्त्रिपरिषद्को कार्यालय (OPMCM)',
-    departmentEn: 'Office of the Prime Minister and Council of Ministers (OPMCM)',
-    url: 'https://pmdrf.nchl.com.np/',
-    badge: 'GOV_OFFICIAL',
-    isGov: true,
-    status: 'ONLINE',
-    descriptionNe: 'नेपाल सरकारको आधिकारिक प्रधानमन्त्री दैवी प्रकोप उद्धार कोषमा कार्ड, क्युआर (Fonepay/NepalPay), र अन्तर्राष्ट्रिय SWIFT मार्फत विपद् पीडितहरूका लागि सिधै सहयोग पठाउने पोर्टल।',
-    descriptionEn: 'Official government portal to contribute to the Prime Minister Disaster Relief Fund via cards, QR codes (Fonepay/NepalPay/UPI), and international SWIFT wire transfers.',
-    featuresNe: ['अनलाइन कार्ड पेमेन्ट (NCHL/HBL)', 'Fonepay / NepalPay QR', 'SWIFT बैंक ट्रान्सफर', 'कर छुट सुविधा'],
-    featuresEn: ['Online Card Payment', 'Domestic QR & UPI', 'SWIFT Wire Transfer', 'Official Tax Exemption'],
-    quickLinks: [
-      { titleNe: 'NCHL पेमेन्ट गेटवे', titleEn: 'NCHL Payment Portal', url: 'https://pmdrf.nchl.com.np/' },
-      { titleNe: 'हिमालयन बैंक गेटवे', titleEn: 'HBL PMDRF Gateway', url: 'https://pmrelieffund.himalayanbank.com/' }
-    ]
-  },
-  {
-    id: 'mohp-blood-bank',
-    category: 'health',
-    categoryNameNe: 'स्वास्थ्य तथा राहत',
-    categoryNameEn: 'Health & Relief',
-    nameNe: 'स्वास्थ्य तथा जनसङ्ख्या मन्त्रालय - राष्ट्रिय रक्तसञ्चार तथा ब्लड बैंक स्थिति',
-    nameEn: 'Ministry of Health (MoHP) - National Blood Bank Stock Status',
-    departmentNe: 'स्वास्थ्य तथा जनसङ्ख्या मन्त्रालय (MoHP)',
-    departmentEn: 'Ministry of Health and Population (MoHP)',
-    url: 'https://freehealth.mohp.gov.np/blood-bank',
-    badge: 'GOV_OFFICIAL',
-    isGov: true,
-    status: 'ONLINE',
-    descriptionNe: 'बाढी, पहिरो तथा आपतकालीन घाइतेहरूको उपचारका लागि देशभरका अस्पताल र रेडक्रस रक्तसञ्चार केन्द्रहरूमा रगतको मौज्दात स्थिति हेर्ने आधिकारिक पोर्टल।',
-    descriptionEn: 'Official national dashboard tracking real-time blood group availability and stock in hospital blood banks and Red Cross transfusion centers across Nepal.',
-    featuresNe: ['रक्त समूह उपलब्धता', 'अस्पताल अनुसार मौज्दात', 'आपतकालीन सम्पर्क'],
-    featuresEn: ['Blood Group Availability', 'Hospital-wise Inventory', 'Emergency Transfusion Contacts'],
-    quickLinks: [
-      { titleNe: 'ब्लड बैंक मौज्दात हेर्नुहोस्', titleEn: 'Check Blood Availability', url: 'https://freehealth.mohp.gov.np/blood-bank' }
-    ]
-  },
-  {
-    id: 'ndrrma-setu-damage',
-    category: 'disaster',
-    categoryNameNe: 'विपद् तथा घटना',
-    categoryNameEn: 'Disaster Incidents',
-    nameNe: 'राष्ट्रिय विपद् प्राधिकरण - सेतु द्रुत क्षति मूल्याङ्कन पोर्टल (SETU)',
-    nameEn: 'NDRRMA - SETU Rapid Post-Disaster Damage Assessment Portal',
-    departmentNe: 'राष्ट्रिय विपद् जोखिम न्यूनीकरण तथा व्यवस्थापन प्राधिकरण (NDRRMA)',
-    departmentEn: 'National Disaster Risk Reduction and Management Authority (NDRRMA)',
-    url: 'https://setu.ndrrma.gov.np/',
-    badge: 'GOV_OFFICIAL',
-    isGov: true,
-    status: 'ONLINE',
-    descriptionNe: 'विपद् पछिको भौतिक पूर्वाधार, निजी आवास र जनधनको क्षतिको द्रुत मूल्याङ्कन गरी राहत र पुनर्निर्माणको योजना बनाउन प्रयोग गरिने आधिकारिक सरकारी प्रणाली।',
-    descriptionEn: 'Official NDRRMA platform for rapid damage assessment of housing and public infrastructure to coordinate post-disaster recovery and reconstruction grants.',
-    featuresNe: ['द्रुत क्षति विवरण संकलन', 'पालिका स्तरको तथ्याङ्क', 'पुनर्निर्माण अनुदान ट्र्याकिङ'],
-    featuresEn: ['Rapid Damage Reporting', 'Municipal Field Data', 'Reconstruction Grant Tracking'],
-    quickLinks: [
-      { titleNe: 'SETU पोर्टल खोल्नुहोस्', titleEn: 'Open SETU Portal', url: 'https://setu.ndrrma.gov.np/' }
     ]
   }
 ];
