@@ -117,11 +117,18 @@ class DirectoryApp {
       });
     }
 
-    if (closeDonateBtn && donationModal) {
-      closeDonateBtn.addEventListener('click', () => {
-        donationModal.classList.remove('active');
-      });
-    }
+    const closeDonateBtns = [
+      document.getElementById('btn-close-donate'),
+      document.getElementById('btn-footer-close-donate')
+    ];
+
+    closeDonateBtns.forEach(btn => {
+      if (btn && donationModal) {
+        btn.addEventListener('click', () => {
+          donationModal.classList.remove('active');
+        });
+      }
+    });
 
     if (donationModal) {
       donationModal.addEventListener('click', (e) => {
@@ -134,19 +141,24 @@ class DirectoryApp {
     // Speed-Dial Modal Handlers
     const speedDialModal = document.getElementById('speed-dial-modal');
     const openSpeedDialBtn = document.getElementById('btn-open-speed-dial');
-    const closeSpeedDialBtn = document.getElementById('btn-close-speed-dial');
+    const closeSpeedDialBtns = [
+      document.getElementById('btn-close-speed-dial'),
+      document.getElementById('btn-footer-close-speed-dial')
+    ];
 
     if (openSpeedDialBtn && speedDialModal) {
       openSpeedDialBtn.addEventListener('click', () => {
-        speedDialModal.classList.add('active');
+        speedDialModal.classList.toggle('active');
       });
     }
 
-    if (closeSpeedDialBtn && speedDialModal) {
-      closeSpeedDialBtn.addEventListener('click', () => {
-        speedDialModal.classList.remove('active');
-      });
-    }
+    closeSpeedDialBtns.forEach(btn => {
+      if (btn && speedDialModal) {
+        btn.addEventListener('click', () => {
+          speedDialModal.classList.remove('active');
+        });
+      }
+    });
 
     if (speedDialModal) {
       speedDialModal.addEventListener('click', (e) => {
@@ -155,6 +167,15 @@ class DirectoryApp {
         }
       });
     }
+
+    // Global Escape Key Handler to Close Any Open Modal
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        if (speedDialModal) speedDialModal.classList.remove('active');
+        if (donationModal) donationModal.classList.remove('active');
+        if (disclaimerModal) disclaimerModal.classList.remove('active');
+      }
+    });
   }
 
   setupSocialSharing() {

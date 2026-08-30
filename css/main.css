@@ -691,11 +691,51 @@ input, textarea, select {
 }
 
 .btn-close-modal {
-  background: none;
-  font-size: 1.5rem;
+  background: rgba(0, 0, 0, 0.06);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  width: 38px;
+  height: 38px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  font-weight: 700;
   color: var(--text-secondary);
   line-height: 1;
-  padding: 4px;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  flex-shrink: 0;
+}
+
+.btn-close-modal:hover {
+  background-color: #FEE2E2;
+  color: #DC2626;
+  border-color: #FECACA;
+}
+
+.btn-modal-exit-footer {
+  width: 100%;
+  background-color: #F1F5F9;
+  border: 1.5px solid #CBD5E1;
+  color: #334155;
+  font-weight: 700;
+  padding: 12px;
+  border-radius: var(--radius-md);
+  font-size: 0.92rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  margin-top: 16px;
+  transition: all var(--transition-fast);
+  font-family: inherit;
+}
+
+.btn-modal-exit-footer:hover {
+  background-color: #E2E8F0;
+  color: #0F172A;
 }
 
 .footer-legal-block {
