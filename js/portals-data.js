@@ -445,17 +445,86 @@ const GOV_PORTALS = [
     quickLinks: [
       { titleNe: '११५५ मा कल गर्नुहोस्', titleEn: 'Call 1155 Now', url: 'tel:1155' }
     ]
+  },
+  // 7. PM RELIEF FUND & HEALTH SERVICES (From OPMCM & MoHP)
+  {
+    id: 'pm-disaster-relief-fund',
+    category: 'health',
+    categoryNameNe: 'स्वास्थ्य तथा राहत',
+    categoryNameEn: 'Health & Relief',
+    nameNe: 'प्रधानमन्त्री दैवी प्रकोप उद्धार कोष (PM Disaster Relief Fund)',
+    nameEn: 'Prime Minister Disaster Relief Fund (PMDRF) Official Donation Gateway',
+    departmentNe: 'प्रधानमन्त्री तथा मन्त्रिपरिषद्को कार्यालय (OPMCM)',
+    departmentEn: 'Office of the Prime Minister and Council of Ministers (OPMCM)',
+    url: 'https://pmdrf.nchl.com.np/',
+    badge: 'GOV_OFFICIAL',
+    isGov: true,
+    status: 'ONLINE',
+    descriptionNe: 'नेपाल सरकारको आधिकारिक प्रधानमन्त्री दैवी प्रकोप उद्धार कोषमा कार्ड, क्युआर (Fonepay/NepalPay), र अन्तर्राष्ट्रिय SWIFT मार्फत विपद् पीडितहरूका लागि सिधै सहयोग पठाउने पोर्टल।',
+    descriptionEn: 'Official government portal to contribute to the Prime Minister Disaster Relief Fund via cards, QR codes (Fonepay/NepalPay/UPI), and international SWIFT wire transfers.',
+    featuresNe: ['अनलाइन कार्ड पेमेन्ट (NCHL/HBL)', 'Fonepay / NepalPay QR', 'SWIFT बैंक ट्रान्सफर', 'कर छुट सुविधा'],
+    featuresEn: ['Online Card Payment', 'Domestic QR & UPI', 'SWIFT Wire Transfer', 'Official Tax Exemption'],
+    quickLinks: [
+      { titleNe: 'NCHL पेमेन्ट गेटवे', titleEn: 'NCHL Payment Portal', url: 'https://pmdrf.nchl.com.np/' },
+      { titleNe: 'हिमालयन बैंक गेटवे', titleEn: 'HBL PMDRF Gateway', url: 'https://pmrelieffund.himalayanbank.com/' }
+    ]
+  },
+  {
+    id: 'mohp-blood-bank',
+    category: 'health',
+    categoryNameNe: 'स्वास्थ्य तथा राहत',
+    categoryNameEn: 'Health & Relief',
+    nameNe: 'स्वास्थ्य तथा जनसङ्ख्या मन्त्रालय - राष्ट्रिय रक्तसञ्चार तथा ब्लड बैंक स्थिति',
+    nameEn: 'Ministry of Health (MoHP) - National Blood Bank Stock Status',
+    departmentNe: 'स्वास्थ्य तथा जनसङ्ख्या मन्त्रालय (MoHP)',
+    departmentEn: 'Ministry of Health and Population (MoHP)',
+    url: 'https://freehealth.mohp.gov.np/blood-bank',
+    badge: 'GOV_OFFICIAL',
+    isGov: true,
+    status: 'ONLINE',
+    descriptionNe: 'बाढी, पहिरो तथा आपतकालीन घाइतेहरूको उपचारका लागि देशभरका अस्पताल र रेडक्रस रक्तसञ्चार केन्द्रहरूमा रगतको मौज्दात स्थिति हेर्ने आधिकारिक पोर्टल।',
+    descriptionEn: 'Official national dashboard tracking real-time blood group availability and stock in hospital blood banks and Red Cross transfusion centers across Nepal.',
+    featuresNe: ['रक्त समूह उपलब्धता', 'अस्पताल अनुसार मौज्दात', 'आपतकालीन सम्पर्क'],
+    featuresEn: ['Blood Group Availability', 'Hospital-wise Inventory', 'Emergency Transfusion Contacts'],
+    quickLinks: [
+      { titleNe: 'ब्लड बैंक मौज्दात हेर्नुहोस्', titleEn: 'Check Blood Availability', url: 'https://freehealth.mohp.gov.np/blood-bank' }
+    ]
+  },
+  {
+    id: 'ndrrma-setu-damage',
+    category: 'disaster',
+    categoryNameNe: 'विपद् तथा घटना',
+    categoryNameEn: 'Disaster Incidents',
+    nameNe: 'राष्ट्रिय विपद् प्राधिकरण - सेतु द्रुत क्षति मूल्याङ्कन पोर्टल (SETU)',
+    nameEn: 'NDRRMA - SETU Rapid Post-Disaster Damage Assessment Portal',
+    departmentNe: 'राष्ट्रिय विपद् जोखिम न्यूनीकरण तथा व्यवस्थापन प्राधिकरण (NDRRMA)',
+    departmentEn: 'National Disaster Risk Reduction and Management Authority (NDRRMA)',
+    url: 'https://setu.ndrrma.gov.np/',
+    badge: 'GOV_OFFICIAL',
+    isGov: true,
+    status: 'ONLINE',
+    descriptionNe: 'विपद् पछिको भौतिक पूर्वाधार, निजी आवास र जनधनको क्षतिको द्रुत मूल्याङ्कन गरी राहत र पुनर्निर्माणको योजना बनाउन प्रयोग गरिने आधिकारिक सरकारी प्रणाली।',
+    descriptionEn: 'Official NDRRMA platform for rapid damage assessment of housing and public infrastructure to coordinate post-disaster recovery and reconstruction grants.',
+    featuresNe: ['द्रुत क्षति विवरण संकलन', 'पालिका स्तरको तथ्याङ्क', 'पुनर्निर्माण अनुदान ट्र्याकिङ'],
+    featuresEn: ['Rapid Damage Reporting', 'Municipal Field Data', 'Reconstruction Grant Tracking'],
+    quickLinks: [
+      { titleNe: 'SETU पोर्टल खोल्नुहोस्', titleEn: 'Open SETU Portal', url: 'https://setu.ndrrma.gov.np/' }
+    ]
   }
 ];
 
 // National Quick Emergency Hotlines Bar
 const EMERGENCY_HOTLINES = [
   { nameNe: 'नेपाल प्रहरी (Police)', nameEn: 'Nepal Police', number: '100', descNe: 'उद्धार तथा सुरक्षा', descEn: 'Emergency & Rescue', icon: '🚨' },
-  { nameNe: 'हराएका बालबालिका (Missing Child)', nameEn: 'Missing Child Search', number: '104', descNe: 'खोजतलास तथा पुनर्मिलन', descEn: 'Child Tracing 104', icon: '🧒' },
-  { nameNe: 'ट्राफिक प्रहरी (Traffic)', nameEn: 'Traffic Police', number: '103', descNe: 'सडक तथा राजमार्ग', descEn: 'Highway Blockage', icon: '🛣️' },
+  { nameNe: 'विपद् उद्धार केन्द्र (NEOC)', nameEn: 'Disaster Operations (NEOC)', number: '1234', descNe: 'राष्ट्रिय आपतकालीन केन्द्र', descEn: 'National Emergency Center', icon: '⚠️' },
+  { nameNe: 'हराएका बालबालिका (Missing Child)', nameEn: 'Missing Child Search', number: '104', descNe: 'खोजतलास तथा समन्वय', descEn: 'Child Tracing 104', icon: '🧒' },
+  { nameNe: 'बाल हेल्पलाइन (Child Helpline)', nameEn: 'Child Helpline', number: '1098', descNe: 'संरक्षण तथा सहायता', descEn: 'Child & Family Protection', icon: '🛡️' },
+  { nameNe: 'दमकल / अग्नि नियन्त्रक (Fire)', nameEn: 'Fire Brigade', number: '101', descNe: 'आगो तथा विपद् उद्धार', descEn: 'Fire & Incident Rescue', icon: '🚒' },
+  { nameNe: 'एम्बुलेन्स सेवा (Ambulance)', nameEn: 'Ambulance Service', number: '102', descNe: 'तत्काल स्वास्थ्य उपचार', descEn: 'Urgent Medical Transit', icon: '🚑' },
+  { nameNe: 'ट्राफिक प्रहरी (Traffic)', nameEn: 'Traffic Police', number: '103', descNe: 'सडक तथा राजमार्ग स्थिति', descEn: 'Road Blockage Status', icon: '🛣️' },
   { nameNe: 'बाढी पूर्वसूचना (Flood Alert)', nameEn: 'Flood Warning Desk', number: '1155', descNe: 'नदी जलसतह जानकारी', descEn: 'River Water Levels', icon: '🌊' },
-  { nameNe: 'नेपाल रेडक्रस (Red Cross)', nameEn: 'Nepal Red Cross', number: '1130', descNe: 'एम्बुलेन्स तथा प्राथमिक उपचार', descEn: 'Ambulance & First Aid', icon: '🏥' },
-  { nameNe: 'सशस्त्र प्रहरी (APF Rescue)', nameEn: 'APF Disaster Squad', number: '1114', descNe: 'गोताखोर तथा डुङ्गा उद्धार', descEn: 'Deep Diving & Boats', icon: '🛟' }
+  { nameNe: 'नेपाल रेडक्रस (Red Cross)', nameEn: 'Nepal Red Cross', number: '1130', descNe: 'राहत तथा प्राथमिक उपचार', descEn: 'Relief & First Aid', icon: '🏥' },
+  { nameNe: 'सशस्त्र प्रहरी (APF Rescue)', nameEn: 'APF Disaster Squad', number: '1114', descNe: 'गोताखोर तथा जल उद्धार', descEn: 'Deep Diving & Boats', icon: '🛟' }
 ];
 
 window.GOV_PORTALS = GOV_PORTALS;
