@@ -16,7 +16,7 @@
 
 ---
 
-## ⚖️ Legal Disclaimer & Attribution (कानुनी जानकारी)
+## Legal Disclaimer & Attribution (कानुनी जानकारी)
 
 - **Non-Governmental Civic Initiative**: Bipad Desk is an independent civic project developed solely for public awareness and disaster preparedness. It is **NOT an official government agency** and does not claim to represent any ministry or state authority.
 - **Data Attribution**: Real-time water levels and weather telemetry are streamed directly from publicly accessible feeds of the **Department of Hydrology and Meteorology (DHM)** and the **National Disaster Risk Reduction and Management Authority (NDRRMA / BIPAD Portal)**.
