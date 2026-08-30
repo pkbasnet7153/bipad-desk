@@ -126,6 +126,14 @@ input, textarea, select {
   line-height: 1.2;
 }
 
+.brand-title-desktop {
+  display: inline;
+}
+
+.brand-title-mobile {
+  display: none;
+}
+
 .brand-text p {
   font-size: 0.78rem;
   color: var(--text-secondary);
