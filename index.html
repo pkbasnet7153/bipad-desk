@@ -18,14 +18,17 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand-section">
-        <img src="assets/nepal-emblem.svg" alt="Nepal Government Emblem" class="brand-logo">
+        <img src="assets/bipad-logo.svg" alt="Bipad Desk Civic Gateway Logo" class="brand-logo">
         <div class="brand-text">
-          <h1 data-i18n="portal_title">विपद् डेस्क (Bipad Desk) - नेपाल</h1>
-          <p data-i18n="portal_subtitle">नेपाल सरकारका सम्पूर्ण बाढी तथा विपद् पोर्टलहरू एकै ठाउँमा</p>
+          <h1 data-i18n="portal_title">विपद् डेस्क (Bipad Desk)</h1>
+          <p data-i18n="portal_subtitle">नेपालका आधिकारिक बाढी, मौसम तथा विपद् पोर्टलहरूको खुला नागरिक निर्देशिका</p>
         </div>
       </div>
 
       <div class="header-actions">
+        <button class="btn-disclaimer-trigger" id="btn-open-disclaimer" title="Legal Disclaimer & Source Attribution" data-i18n="btn_legal_info">
+          ⚖️ कानुनी जानकारी
+        </button>
         <div class="lang-switch">
           <button class="lang-btn active" data-lang="ne">ने</button>
           <button class="lang-btn" data-lang="en">EN</button>
@@ -65,12 +68,12 @@
 
     <!-- HERO GATEWAY BANNER -->
     <section class="hero-gateway">
-      <span class="hero-tag" data-i18n="hero_badge">🇳🇵 आधिकारिक सरकारी लिङ्क डाइरेक्टरी</span>
+      <span class="hero-tag" data-i18n="hero_badge">🕊️ खुला नागरिक पहल | आधिकारिक पोर्टल डाइरेक्टरी</span>
       <h2 class="hero-gateway-title" data-i18n="hero_title">
-        नेपाल सरकारका सबै बाढी, मौसम तथा विपद् पोर्टलहरू एकै ठाउँमा
+        नेपालका सबै बाढी, मौसम तथा विपद् पोर्टलहरू एकै ठाउँमा
       </h2>
       <p class="hero-gateway-subtitle" data-i18n="hero_subtitle">
-        विभिन्न मन्त्रालय, विभाग र सुरक्षा निकायका छरिएका आधिकारिक वेबसाइटहरू खोज्न अब भौंतारिनु पर्दैन। यहाँबाट सिधै आधिकारिक मूल पोर्टलहरूमा जानुहोस्।
+        विभिन्न मन्त्रालय, विभाग र सुरक्षा निकायका छरिएका आधिकारिक वेबसाइटहरू खोज्न अब भौंतारिनु पर्दैन। यहाँबाट सिधै आधिकारिक मूल सरकारी (.gov.np) पोर्टलहरूमा जानुहोस्।
       </p>
 
       <!-- Global Search Bar -->
@@ -83,7 +86,7 @@
       <div class="hero-stats-row">
         <div class="hero-stat-item">
           <span class="stat-num" id="stat-total-portals">16</span>
-          <span class="stat-txt" data-i18n="stat_total_portals">सूचीकृत सरकारी पोर्टल</span>
+          <span class="stat-txt" data-i18n="stat_total_portals">सूचीकृत आधिकारिक पोर्टल</span>
         </div>
         <div class="hero-stat-item">
           <span class="stat-num" id="stat-categories-count">8</span>
@@ -91,11 +94,11 @@
         </div>
         <div class="hero-stat-item">
           <span class="stat-num" id="stat-hotlines-count">6</span>
-          <span class="stat-txt" data-i18n="stat_hotlines">२४/७ हटलाइन सेवा</span>
+          <span class="stat-txt" data-i18n="stat_hotlines">२४/७ आपतकालीन हटलाइन</span>
         </div>
         <div class="hero-stat-item">
           <span class="stat-num" style="color: #4ADE80;">100%</span>
-          <span class="stat-txt" data-i18n="stat_status">प्रणाली स्थिति (Active)</span>
+          <span class="stat-txt" data-i18n="stat_status">निर्देशिका स्थिति (सक्रिय)</span>
         </div>
       </div>
     </section>
@@ -133,7 +136,7 @@
     <!-- Directory Status Count Header -->
     <div class="directory-status-header">
       <span id="portal-results-count" class="portal-results-count">16 portals</span>
-      <span style="font-size: 0.8rem; color: var(--text-muted);">🔒 Verified Official Government Sources Only</span>
+      <span style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="verified_sources_note">🔒 Verified Official Sources Only (.gov.np Direct Redirects)</span>
     </div>
 
     <!-- =======================================================================
@@ -146,21 +149,49 @@
   </main>
 
   <!-- =========================================================================
-       7. FOOTER
+       7. FOOTER & LEGAL NOTICE
        ========================================================================= -->
   <footer class="site-footer">
     <div class="container footer-inner">
-      <div>
-        <p data-i18n="footer_copy">© 2026 Nepal Flood & Disaster Portals Gateway. All Rights Reserved.</p>
-        <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;" data-i18n="footer_disclaimer">
-          यस निर्देशिकाले प्रयोगकर्तालाई सम्बन्धित नेपाल सरकारका आधिकारिक मूल वेबसाइटहरूमा सिधै रिडाइरेक्ट गर्दछ।
+      <div class="footer-legal-block">
+        <p data-i18n="footer_copy">© 2026 Bipad Desk (विपद् डेस्क) — खुला नागरिक निर्देशिका पहल</p>
+        <p class="footer-disclaimer-text" data-i18n="footer_disclaimer">
+          ⚠️ <strong>कानुनी घोषणा:</strong> यो एक स्वतन्त्र नागरिक निर्देशिका हो (सरकारी निकाय होइन)। सबै लिङ्कहरूले नेपाल सरकार तथा आधिकारिक निकायका मूल वेबसाइटहरू (.gov.np) मा सिधै रिडाइरेक्ट गर्दछन्।
         </p>
       </div>
-      <div style="display: flex; gap: 14px;">
+      <div class="footer-links">
+        <button class="footer-legal-btn" id="btn-footer-disclaimer" data-i18n="btn_legal_info">⚖️ कानुनी जानकारी</button>
         <a href="#top" style="color: var(--gov-blue); font-weight: 600;">⬆ Top</a>
       </div>
     </div>
   </footer>
+
+  <!-- =========================================================================
+       8. LEGAL DISCLAIMER & ATTRIBUTION MODAL
+       ========================================================================= -->
+  <div class="modal-overlay" id="disclaimer-modal" role="dialog" aria-modal="true" aria-labelledby="disclaimer-modal-title">
+    <div class="modal-box modal-box-disclaimer">
+      <div class="modal-header">
+        <h3 id="disclaimer-modal-title" data-i18n="modal_disclaimer_title">⚖️ कानुनी जानकारी तथा सार्वजनिक घोषणा</h3>
+        <button class="btn-close-modal" id="btn-close-disclaimer" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body disclaimer-modal-content">
+        <div class="disclaimer-callout">
+          <p><strong>१. गैर-सरकारी खुला नागरिक पहल:</strong> <span data-i18n="disclaimer_point1">यो वेबसाइट कुनै सरकारी निकाय, मन्त्रालय वा विभागको आधिकारिक पोर्टल होइन। यो बाढी तथा विपद्को समयमा छरिएका आधिकारिक सरकारी सेवाहरूलाई एकै ठाउँमा खोज्न सहज बनाउन तयार गरिएको स्वतन्त्र खुला नागरिक निर्देशिका (Civic Directory) हो।</span></p>
+        </div>
+        <div class="disclaimer-callout">
+          <p><strong>२. आधिकारिक मूल स्रोत रिडाइरेक्ट:</strong> <span data-i18n="disclaimer_point2">यस निर्देशिकामा रहेका सबै पोर्टल कार्डहरूले प्रयोगकर्तालाई सम्बन्धित नेपाल सरकारका आधिकारिक (.gov.np) वा आधिकारिक मानवीय संस्थाका मूल वेबसाइटहरूमा सिधै सुरक्षित रूपमा रिडाइरेक्ट गर्दछ।</span></p>
+        </div>
+        <div class="disclaimer-callout">
+          <p><strong>३. प्रत्यक्ष जलसतह तथ्याङ्क स्रोत:</strong> <span data-i18n="disclaimer_point3">प्रत्यक्ष बाढी तथा नदी पूर्वसूचना स्ट्रिम जल तथा मौसम विज्ञान विभाग (DHM) र विपद् पोर्टल (BIPAD) को सार्वजनिक खुला एपीआई फिडबाट प्रत्यक्ष साभार गरिएको हो।</span></p>
+        </div>
+        <div class="disclaimer-callout">
+          <p><strong>४. व्यक्तिगत गोपनीयता तथा सुरक्षा:</strong> <span data-i18n="disclaimer_point4">यस वेबसाइटले प्रयोगकर्ताको कुनै पनि व्यक्तिगत विवरण सङ्कलन गर्दैन। सम्पूर्ण आपतकालीन सेवाहरू सम्बन्धित निकायका आधिकारिक फोन नम्बर र पोर्टलबाट मात्र सञ्चालन हुन्छन्।</span></p>
+        </div>
+        <button class="btn-submit-modal" id="btn-understand-disclaimer" style="margin-top: 16px;" data-i18n="btn_understand">बुझें / I Understand</button>
+      </div>
+    </div>
+  </div>
 
   <!-- Application Scripts -->
   <script src="js/portals-data.js"></script>

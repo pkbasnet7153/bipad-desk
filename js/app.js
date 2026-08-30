@@ -55,10 +55,39 @@ class DirectoryApp {
       });
     }
 
-    // Modal submit portal form
-    const suggestForm = document.getElementById('suggest-portal-form');
-    if (suggestForm) {
-      suggestForm.addEventListener('submit', (e) => this.handleSuggestSubmit(e));
+    // Disclaimer Modal Handlers
+    const disclaimerModal = document.getElementById('disclaimer-modal');
+    const openDisclaimerBtns = [
+      document.getElementById('btn-open-disclaimer'),
+      document.getElementById('btn-footer-disclaimer')
+    ];
+    const closeDisclaimerBtns = [
+      document.getElementById('btn-close-disclaimer'),
+      document.getElementById('btn-understand-disclaimer')
+    ];
+
+    openDisclaimerBtns.forEach(btn => {
+      if (btn && disclaimerModal) {
+        btn.addEventListener('click', () => {
+          disclaimerModal.classList.add('active');
+        });
+      }
+    });
+
+    closeDisclaimerBtns.forEach(btn => {
+      if (btn && disclaimerModal) {
+        btn.addEventListener('click', () => {
+          disclaimerModal.classList.remove('active');
+        });
+      }
+    });
+
+    if (disclaimerModal) {
+      disclaimerModal.addEventListener('click', (e) => {
+        if (e.target === disclaimerModal) {
+          disclaimerModal.classList.remove('active');
+        }
+      });
     }
   }
 

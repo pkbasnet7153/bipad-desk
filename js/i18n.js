@@ -5,14 +5,15 @@
 
 const translations = {
   ne: {
-    portal_title: "विपद् डेस्क (Bipad Desk) - नेपाल",
-    portal_subtitle: "नेपाल सरकारका सम्पूर्ण बाढी तथा विपद् पोर्टलहरू एकै ठाउँमा",
+    portal_title: "विपद् डेस्क (Bipad Desk)",
+    portal_subtitle: "नेपालका आधिकारिक बाढी, मौसम तथा विपद् पोर्टलहरूको खुला नागरिक निर्देशिका",
     search_placeholder: "पोर्टल, हराएका व्यक्ति, UDB, विभाग, नदी, मौसम, सडक वा BIPAD खोज्नुहोस्...",
     
-    // Hero
-    hero_title: "नेपाल सरकारका सबै बाढी, मौसम तथा विपद् पोर्टलहरू एकै ठाउँमा",
-    hero_subtitle: "विभिन्न मन्त्रालय, विभाग, प्रहरी र सुरक्षा निकायका छरिएका आधिकारिक वेबसाइटहरू खोज्न अब भौंतारिनु पर्दैन। यहाँबाट सिधै आधिकारिक मूल पोर्टलहरूमा जानुहोस्।",
-    hero_badge: "🇳🇵 आधिकारिक सरकारी लिङ्क डाइरेक्टरी",
+    // Header & Hero
+    btn_legal_info: "⚖️ कानुनी जानकारी",
+    hero_title: "नेपालका सबै बाढी, मौसम तथा विपद् पोर्टलहरू एकै ठाउँमा",
+    hero_subtitle: "विभिन्न मन्त्रालय, विभाग र सुरक्षा निकायका छरिएका आधिकारिक वेबसाइटहरू खोज्न अब भौंतारिनु पर्दैन। यहाँबाट सिधै आधिकारिक मूल सरकारी (.gov.np) पोर्टलहरूमा जानुहोस्।",
+    hero_badge: "🕊️ खुला नागरिक पहल | आधिकारिक पोर्टल डाइरेक्टरी",
     btn_quick_dial: "📞 आपतकालीन हटलाइन नम्बरहरू",
     btn_suggest: "➕ छुटेको सरकारी पोर्टल सिफारिस",
 
@@ -29,11 +30,11 @@ const translations = {
 
     // Portal Card Actions
     btn_open_portal: "🚀 मूल पोर्टल खोल्नुहोस्",
-    tag_official: "नेपाल सरकार (Official Gov)",
-    tag_humanitarian: "प्रामाणिक निकाय (Verified Authority)",
+    tag_official: "आधिकारिक सरकारी स्रोत (.gov.np)",
+    tag_humanitarian: "प्रमाणित मानवीय निकाय (Verified Authority)",
     lbl_features: "उपलब्ध सेवा तथा तथ्याङ्क:",
     lbl_quick_links: "द्रुत सर्टकटहरू (Quick Links):",
-    lbl_source_dept: "निकाय:",
+    lbl_source_dept: "सम्बन्धित निकाय:",
     btn_copy_link: "🔗 लिङ्क कपी",
     btn_share_portal: "📤 सेयर",
 
@@ -45,39 +46,38 @@ const translations = {
     hotlines_heading: "२४/७ राष्ट्रिय आपतकालीन हटलाइनहरू (१-ट्याप कल):",
     call_now: "कल गर्नुहोस्",
 
-    // Modal Suggest Portal
-    modal_suggest_title: "छुटेको सरकारी पोर्टल सिफारिस गर्नुहोस्",
-    modal_suggest_subtitle: "कुनै पालिका, विभाग वा मन्त्रालयको बाढी/विपद् सम्बन्धी आधिकारिक पोर्टल छुटेको भए विवरण पठाउनुहोस्।",
-    label_portal_name: "पोर्टलको नाम *",
-    label_portal_url: "वेबसाइटको लिङ्क (URL) *",
-    label_portal_dept: "सम्बन्धित मन्त्रालय वा विभाग *",
-    label_portal_desc: "सेवा तथा विवरण",
-    btn_submit_portal: "सिफारिस दर्ता गर्नुहोस्",
-
     // Stats
-    stat_total_portals: "सूचीकृत सरकारी पोर्टल",
+    stat_total_portals: "सूचीकृत आधिकारिक पोर्टल",
     stat_categories: "विपद् विषयगत वर्ग",
-    stat_hotlines: "२४/७ हटलाइन सेवा",
-    stat_status: "प्रणाली स्थिति (Online)",
+    stat_hotlines: "२४/७ आपतकालीन हटलाइन",
+    stat_status: "निर्देशिका स्थिति (सक्रिय)",
+    verified_sources_note: "🔒 प्रमाणीकृत आधिकारिक स्रोतहरू मात्र (.gov.np प्रत्यक्ष लिङ्क)",
 
-    // Footer
-    footer_copy: "© 2026 Nepal Flood & Disaster Portals Gateway. सबै अधिकार सुरक्षित।",
-    footer_disclaimer: "यस निर्देशिकाले प्रयोगकर्तालाई सम्बन्धित नेपाल सरकारका आधिकारिक मूल वेबसाइटहरूमा सिधै रिडाइरेक्ट गर्दछ।",
+    // Footer & Disclaimer Modal
+    footer_copy: "© 2026 Bipad Desk (विपद् डेस्क) — खुला नागरिक निर्देशिका पहल",
+    footer_disclaimer: "⚠️ कानुनी घोषणा: यो एक स्वतन्त्र नागरिक निर्देशिका हो (सरकारी निकाय होइन)। सबै लिङ्कहरूले नेपाल सरकार तथा आधिकारिक निकायका मूल वेबसाइटहरू (.gov.np) मा सिधै रिडाइरेक्ट गर्दछन्।",
+    modal_disclaimer_title: "⚖️ कानुनी जानकारी तथा सार्वजनिक घोषणा",
+    disclaimer_point1: "यो वेबसाइट कुनै सरकारी निकाय, मन्त्रालय वा विभागको आधिकारिक पोर्टल होइन। यो बाढी तथा विपद्को समयमा छरिएका आधिकारिक सरकारी सेवाहरूलाई एकै ठाउँमा खोज्न सहज बनाउन तयार गरिएको स्वतन्त्र खुला नागरिक निर्देशिका (Civic Directory) हो।",
+    disclaimer_point2: "यस निर्देशिकामा रहेका सबै पोर्टल कार्डहरूले प्रयोगकर्तालाई सम्बन्धित नेपाल सरकारका आधिकारिक (.gov.np) वा आधिकारिक मानवीय संस्थाका मूल वेबसाइटहरूमा सिधै सुरक्षित रूपमा रिडाइरेक्ट गर्दछ।",
+    disclaimer_point3: "प्रत्यक्ष बाढी तथा नदी पूर्वसूचना स्ट्रिम जल तथा मौसम विज्ञान विभाग (DHM) र विपद् पोर्टल (BIPAD) को सार्वजनिक खुला एपीआई फिडबाट प्रत्यक्ष साभार गरिएको हो।",
+    disclaimer_point4: "यस वेबसाइटले प्रयोगकर्ताको कुनै पनि व्यक्तिगत विवरण सङ्कलन गर्दैन। सम्पूर्ण आपतकालीन सेवाहरू सम्बन्धित निकायका आधिकारिक फोन नम्बर र पोर्टलबाट मात्र सञ्चालन हुन्छन्।",
+    btn_understand: "बुझें (I Understand)",
     footer_about: "हाम्रो बारेमा",
     footer_contact: "सम्पर्क"
   },
 
   en: {
-    portal_title: "Bipad Desk (विपद् डेस्क) - Nepal",
-    portal_subtitle: "Unified Directory of Nepal Government Flood & Disaster Portals",
+    portal_title: "Bipad Desk (विपद् डेस्क)",
+    portal_subtitle: "Open Civic Directory of Nepal Disaster, Weather & River Watch Portals",
     search_placeholder: "Search portal, missing persons, UDB, river, weather, DOR, or BIPAD...",
 
-    // Hero
-    hero_title: "All Nepal Government Flood, Weather & Disaster Portals in One Directory",
-    hero_subtitle: "No more searching through scattered links across different ministries and departments. Access all verified official government platforms directly from this unified dashboard.",
-    hero_badge: "🇳🇵 Official Government Links Gateway",
+    // Header & Hero
+    btn_legal_info: "⚖️ Legal Info",
+    hero_title: "Direct Access to Nepal Disaster, Weather & River Watch Portals",
+    hero_subtitle: "An independent civic directory aggregating scattered official disaster, river watch, weather forecast, and emergency hotlines. All portal cards redirect safely to verified official .gov.np platforms.",
+    hero_badge: "🕊️ Open Civic Initiative | Verified Public Links Gateway",
     btn_quick_dial: "📞 Emergency Hotlines Desk",
-    btn_suggest: "➕ Suggest Missing Government Portal",
+    btn_suggest: "➕ Suggest Missing Portal",
 
     // Categories
     cat_all: "🌐 All Portals",
@@ -92,7 +92,7 @@ const translations = {
 
     // Portal Card Actions
     btn_open_portal: "🚀 Open Official Portal",
-    tag_official: "Official Government Portal",
+    tag_official: "Official Gov Source (.gov.np)",
     tag_humanitarian: "Verified Authority",
     lbl_features: "Available Services & Telemetry:",
     lbl_quick_links: "Quick Action Shortcuts:",
@@ -108,24 +108,22 @@ const translations = {
     hotlines_heading: "24/7 National Emergency Hotlines (1-Tap Call):",
     call_now: "Call Now",
 
-    // Modal Suggest Portal
-    modal_suggest_title: "Suggest an Official Government Portal",
-    modal_suggest_subtitle: "If any municipal, departmental or ministerial disaster portal is missing, please submit it here.",
-    label_portal_name: "Portal Name *",
-    label_portal_url: "Website URL *",
-    label_portal_dept: "Ministry or Department *",
-    label_portal_desc: "Services & Description",
-    btn_submit_portal: "Submit Portal Suggestion",
-
     // Stats
     stat_total_portals: "Indexed Gov Portals",
     stat_categories: "Disaster Categories",
     stat_hotlines: "24/7 Hotlines",
-    stat_status: "Gateway Status (Active)",
+    stat_status: "Directory Status (Active)",
+    verified_sources_note: "🔒 Verified Official Sources Only (.gov.np Direct Redirects)",
 
-    // Footer
-    footer_copy: "© 2026 Nepal Flood & Disaster Portals Gateway. All Rights Reserved.",
-    footer_disclaimer: "This directory redirects citizens directly to official Nepal government source platforms.",
+    // Footer & Disclaimer Modal
+    footer_copy: "© 2026 Bipad Desk — Open Civic Directory Initiative",
+    footer_disclaimer: "⚠️ Legal Disclaimer: Bipad Desk is an independent civic directory (NOT a government agency). All links redirect directly to official Government of Nepal platforms (.gov.np).",
+    modal_disclaimer_title: "⚖️ Legal Disclaimer & Public Attribution",
+    disclaimer_point1: "This website is NOT an official government portal, ministry, or department. It is an independent, non-profit civic directory created to aggregate scattered public emergency resources during floods and disasters.",
+    disclaimer_point2: "All listed portal links redirect citizens directly and securely to official Government of Nepal domains (.gov.np) or accredited humanitarian platforms without altering any official forms or data.",
+    disclaimer_point3: "Live flood telemetry streams are sourced directly from public open API feeds published by the Department of Hydrology and Meteorology (DHM) and BIPAD Portal.",
+    disclaimer_point4: "This website does not store or collect personal identifying data. All emergency operations and inquiries must be directed to official emergency hotlines and departmental desks.",
+    btn_understand: "I Understand",
     footer_about: "About Directory",
     footer_contact: "Contact"
   }
