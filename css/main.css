@@ -573,12 +573,12 @@ input, textarea, select {
    FOOTER & MODALS
    ========================================================================== */
 .site-footer {
-  background-color: var(--bg-card);
-  border-top: 1px solid var(--border-color);
-  padding: 28px 0;
+  background-color: #F8FAFC;
+  border-top: 2px solid #CBD5E1;
+  padding: 30px 0;
   margin-top: 48px;
-  font-size: 0.85rem;
-  color: var(--text-secondary);
+  font-size: 0.88rem;
+  color: #1E293B;
 }
 
 .footer-inner {
@@ -685,14 +685,33 @@ input, textarea, select {
 
 .footer-legal-block {
   text-align: left;
-  max-width: 680px;
+  max-width: 740px;
+}
+
+.footer-legal-block p[data-i18n="footer_copy"] {
+  color: #0F172A;
+  font-weight: 700;
+  font-size: 0.94rem;
+  margin-bottom: 6px;
 }
 
 .footer-disclaimer-text {
-  font-size: 0.78rem;
-  color: var(--text-muted);
-  margin-top: 4px;
-  line-height: 1.4;
+  background-color: #FFFBEB;
+  border: 1px solid #FCD34D;
+  border-left: 4px solid #D97706;
+  color: #78350F;
+  font-size: 0.84rem;
+  font-weight: 600;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  margin-top: 8px;
+  line-height: 1.5;
+  box-shadow: 0 1px 3px rgba(217, 119, 6, 0.08);
+}
+
+.footer-disclaimer-text strong {
+  color: #92400E;
+  font-weight: 800;
 }
 
 .footer-links {
