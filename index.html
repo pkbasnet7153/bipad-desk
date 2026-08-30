@@ -12,9 +12,9 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default">
   <meta name="apple-mobile-web-app-title" content="Bipad Desk">
 
-  <link rel="stylesheet" href="css/main.css?v=3.0">
-  <link rel="stylesheet" href="css/dashboard.css?v=3.0">
-  <link rel="stylesheet" href="css/mobile.css?v=3.0">
+  <link rel="stylesheet" href="css/main.css?v=3.1">
+  <link rel="stylesheet" href="css/dashboard.css?v=3.1">
+  <link rel="stylesheet" href="css/mobile.css?v=3.1">
 </head>
 <body>
 
@@ -206,8 +206,13 @@
   <div class="modal-overlay" id="disclaimer-modal" role="dialog" aria-modal="true" aria-labelledby="disclaimer-modal-title">
     <div class="modal-box modal-box-disclaimer">
       <div class="modal-header">
-        <h3 id="disclaimer-modal-title" data-i18n="modal_disclaimer_title">कानुनी जानकारी तथा सार्वजनिक घोषणा</h3>
-        <button class="btn-close-modal" id="btn-close-disclaimer" aria-label="Close">&times;</button>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button class="btn-close-modal" id="btn-back-disclaimer" title="Go Back" aria-label="Go Back" style="font-size: 1.1rem; font-weight: 800;">
+            ←
+          </button>
+          <h3 id="disclaimer-modal-title" data-i18n="modal_disclaimer_title" style="margin: 0; font-size: 1rem;">कानुनी जानकारी तथा सार्वजनिक घोषणा</h3>
+        </div>
+        <button class="btn-close-modal" id="btn-close-disclaimer" aria-label="Close" style="font-size: 1.2rem; font-weight: 800;">✕</button>
       </div>
       <div class="modal-body disclaimer-modal-content">
         <div class="disclaimer-callout">
@@ -222,7 +227,9 @@
         <div class="disclaimer-callout">
           <p><strong>४. व्यक्तिगत गोपनीयता तथा सुरक्षा:</strong> <span data-i18n="disclaimer_point4">यस वेबसाइटले प्रयोगकर्ताको कुनै पनि व्यक्तिगत विवरण सङ्कलन गर्दैन। सम्पूर्ण आपतकालीन सेवाहरू सम्बन्धित निकायका आधिकारिक फोन नम्बर र पोर्टलबाट मात्र सञ्चालन हुन्छन्।</span></p>
         </div>
-        <button class="btn-submit-modal" id="btn-understand-disclaimer" style="margin-top: 16px;" data-i18n="btn_understand">बुझें / I Understand</button>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-submit-modal" id="btn-understand-disclaimer" data-i18n="btn_understand">बुझें / I Understand (Close)</button>
       </div>
     </div>
   </div>
@@ -233,11 +240,16 @@
   <div class="modal-overlay" id="donation-modal" role="dialog" aria-modal="true" aria-labelledby="donation-modal-title">
     <div class="modal-box modal-box-donate">
       <div class="modal-header">
-        <div>
-          <h3 id="donation-modal-title" data-i18n="modal_donate_title" style="color: #991B1B;">प्रधानमन्त्री दैवी प्रकोप उद्धार कोष तथा प्रत्यक्ष राहत संकलन</h3>
-          <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 2px;" data-i18n="modal_donate_subtitle">नेपाल सरकारको आधिकारिक विपद् उद्धार कोषमा सिधै सहायता पठाउनुहोस् वा संकलन प्रतिवेदन हेर्नुहोस्।</p>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button class="btn-close-modal" id="btn-back-donate" title="Go Back" aria-label="Go Back" style="color: #991B1B; font-size: 1.1rem; font-weight: 800;">
+            ←
+          </button>
+          <div>
+            <h3 id="donation-modal-title" data-i18n="modal_donate_title" style="color: #991B1B; font-size: 1rem; margin: 0;">प्रधानमन्त्री दैवी प्रकोप उद्धार कोष तथा प्रत्यक्ष राहत संकलन</h3>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;" data-i18n="modal_donate_subtitle">नेपाल सरकारको आधिकारिक विपद् उद्धार कोषमा सिधै सहायता पठाउनुहोस् वा संकलन प्रतिवेदन हेर्नुहोस्।</p>
+          </div>
         </div>
-        <button class="btn-close-modal" id="btn-close-donate" aria-label="Close">&times;</button>
+        <button class="btn-close-modal" id="btn-close-donate" aria-label="Close" style="font-size: 1.2rem; font-weight: 800;">✕</button>
       </div>
       <div class="modal-body donation-modal-content">
         
@@ -341,8 +353,10 @@
         <div style="background-color: var(--bg-body); padding: 10px 14px; border-radius: var(--radius-sm); font-size: 0.82rem; color: var(--text-muted);">
           ☎️ <strong>आपतकालीन जानकारी तथा सहायता:</strong> NEOC हटलाइन: <code>1234</code> | हेलो सरकार: <code>+977-015971000</code>, <code>+977-9851145045</code>
         </div>
+      </div>
+      <div class="modal-footer">
         <button class="btn-modal-exit-footer" id="btn-footer-close-donate" data-i18n="btn_close_exit">
-          ✕ बन्द गर्नुहोस् (Close / Exit)
+          ← पछाडि फर्कनुहोस् (Close & Go Back)
         </button>
       </div>
     </div>
@@ -354,18 +368,25 @@
   <div class="modal-overlay" id="speed-dial-modal" role="dialog" aria-modal="true" aria-labelledby="speed-dial-title">
     <div class="modal-box modal-box-speed-dial">
       <div class="modal-header">
-        <div>
-          <h3 id="speed-dial-title" data-i18n="speed_dial_title" style="color: #DC2626;">२४/७ राष्ट्रिय आपतकालीन हटलाइनहरू (१-ट्याप कल)</h3>
-          <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 2px;" data-i18n="speed_dial_subtitle">तत्काल सहायताका लागि कुनै पनि सेवामा थिच्नुहोस्:</p>
+        <div style="display: flex; align-items: center; gap: 8px;">
+          <button class="btn-close-modal" id="btn-back-speed-dial" title="Go Back" aria-label="Go Back" style="color: #DC2626; font-size: 1.1rem; font-weight: 800;">
+            ←
+          </button>
+          <div>
+            <h3 id="speed-dial-title" data-i18n="speed_dial_title" style="color: #DC2626; font-size: 1rem; margin: 0;">२४/७ राष्ट्रिय आपतकालीन हटलाइनहरू (१-ट्याप कल)</h3>
+            <p style="font-size: 0.8rem; color: var(--text-muted); margin-top: 2px;" data-i18n="speed_dial_subtitle">तत्काल सहायताका लागि कुनै पनि सेवामा थिच्नुहोस्:</p>
+          </div>
         </div>
-        <button class="btn-close-modal" id="btn-close-speed-dial" title="Close" aria-label="Close">&times;</button>
+        <button class="btn-close-modal" id="btn-close-speed-dial" title="Close" aria-label="Close" style="font-size: 1.2rem; font-weight: 800;">✕</button>
       </div>
       <div class="modal-body">
         <div class="speed-dial-grid" id="speed-dial-grid-container">
           <!-- Populated dynamically via JS -->
         </div>
-        <button class="btn-modal-exit-footer" id="btn-footer-close-speed-dial" data-i18n="btn_close_exit" style="margin-top: 18px;">
-          ✕ बन्द गर्नुहोस् (Close / Exit)
+      </div>
+      <div class="modal-footer">
+        <button class="btn-modal-exit-footer" id="btn-footer-close-speed-dial" data-i18n="btn_close_exit">
+          ← पछाडि फर्कनुहोस् (Close & Go Back)
         </button>
       </div>
     </div>
@@ -382,8 +403,8 @@
   </div>
 
   <!-- Application Scripts with Cache Busting -->
-  <script src="js/portals-data.js?v=3.0"></script>
-  <script src="js/i18n.js?v=3.0"></script>
-  <script src="js/app.js?v=3.0"></script>
+  <script src="js/portals-data.js?v=3.1"></script>
+  <script src="js/i18n.js?v=3.1"></script>
+  <script src="js/app.js?v=3.1"></script>
 </body>
 </html>

@@ -79,6 +79,7 @@ class DirectoryApp {
     ];
     const closeDisclaimerBtns = [
       document.getElementById('btn-close-disclaimer'),
+      document.getElementById('btn-back-disclaimer'),
       document.getElementById('btn-understand-disclaimer')
     ];
 
@@ -109,7 +110,6 @@ class DirectoryApp {
     // Donation Modal Handlers
     const donationModal = document.getElementById('donation-modal');
     const openDonateBtn = document.getElementById('btn-open-donate');
-    const closeDonateBtn = document.getElementById('btn-close-donate');
 
     if (openDonateBtn && donationModal) {
       openDonateBtn.addEventListener('click', () => {
@@ -119,6 +119,7 @@ class DirectoryApp {
 
     const closeDonateBtns = [
       document.getElementById('btn-close-donate'),
+      document.getElementById('btn-back-donate'),
       document.getElementById('btn-footer-close-donate')
     ];
 
@@ -143,6 +144,7 @@ class DirectoryApp {
     const openSpeedDialBtn = document.getElementById('btn-open-speed-dial');
     const closeSpeedDialBtns = [
       document.getElementById('btn-close-speed-dial'),
+      document.getElementById('btn-back-speed-dial'),
       document.getElementById('btn-footer-close-speed-dial')
     ];
 
