@@ -1,14 +1,14 @@
-const CACHE_NAME = 'bipad-desk-v2.6';
+const CACHE_NAME = 'bipad-desk-v3.2';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './manifest.json',
-  './css/main.css?v=2.6',
-  './css/dashboard.css?v=2.6',
-  './css/mobile.css?v=2.6',
-  './js/portals-data.js?v=2.6',
-  './js/i18n.js?v=2.6',
-  './js/app.js?v=2.6',
+  './css/main.css?v=3.2',
+  './css/dashboard.css?v=3.2',
+  './css/mobile.css?v=3.2',
+  './js/portals-data.js?v=3.2',
+  './js/i18n.js?v=3.2',
+  './js/app.js?v=3.2',
   './assets/bipad-logo.svg',
   './assets/hero-illustration.svg',
   './assets/nepal-emblem.svg'
@@ -18,7 +18,7 @@ self.addEventListener('install', (event) => {
   event.waitUntil(
     caches.open(CACHE_NAME).then((cache) => {
       return cache.addAll(ASSETS_TO_CACHE).catch((err) => {
-        console.warn('Cache addAll error (non-fatal):', err);
+        console.warn('Cache pre-fetch error:', err);
       });
     })
   );
@@ -41,27 +41,15 @@ self.addEventListener('activate', (event) => {
 });
 
 self.addEventListener('fetch', (event) => {
-  // Network first with cache fallback for HTML, Cache first for static assets
-  if (event.request.mode === 'navigate') {
-    event.respondWith(
-      fetch(event.request)
-        .catch(() => {
-          return caches.match('./index.html');
-        })
-    );
-    return;
-  }
-
+  // Network-First Strategy with Cache Fallback for instant updates and offline support
   event.respondWith(
-    caches.match(event.request).then((cachedResponse) => {
-      if (cachedResponse) {
-        return cachedResponse;
-      }
-      return fetch(event.request).then((networkResponse) => {
+    fetch(event.request)
+      .then((networkResponse) => {
         if (
           networkResponse &&
           networkResponse.status === 200 &&
-          event.request.url.startsWith(self.location.origin)
+          event.request.url.startsWith(self.location.origin) &&
+          event.request.method === 'GET'
         ) {
           const responseClone = networkResponse.clone();
           caches.open(CACHE_NAME).then((cache) => {
@@ -69,7 +57,16 @@ self.addEventListener('fetch', (event) => {
           });
         }
         return networkResponse;
-      });
-    })
+      })
+      .catch(() => {
+        return caches.match(event.request).then((cachedResponse) => {
+          if (cachedResponse) {
+            return cachedResponse;
+          }
+          if (event.request.mode === 'navigate') {
+            return caches.match('./index.html');
+          }
+        });
+      })
   );
 });
