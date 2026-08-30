@@ -139,6 +139,13 @@ input, textarea, select {
   color: var(--text-secondary);
 }
 
+.header-quick-utils {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: auto;
+}
+
 .header-actions {
   display: flex;
   align-items: center;
