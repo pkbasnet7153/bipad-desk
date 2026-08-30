@@ -89,6 +89,31 @@ class DirectoryApp {
         }
       });
     }
+
+    // Donation Modal Handlers
+    const donationModal = document.getElementById('donation-modal');
+    const openDonateBtn = document.getElementById('btn-open-donate');
+    const closeDonateBtn = document.getElementById('btn-close-donate');
+
+    if (openDonateBtn && donationModal) {
+      openDonateBtn.addEventListener('click', () => {
+        donationModal.classList.add('active');
+      });
+    }
+
+    if (closeDonateBtn && donationModal) {
+      closeDonateBtn.addEventListener('click', () => {
+        donationModal.classList.remove('active');
+      });
+    }
+
+    if (donationModal) {
+      donationModal.addEventListener('click', (e) => {
+        if (e.target === donationModal) {
+          donationModal.classList.remove('active');
+        }
+      });
+    }
   }
 
   renderHotlines() {

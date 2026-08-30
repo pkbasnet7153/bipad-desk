@@ -10,6 +10,7 @@ const translations = {
     search_placeholder: "पोर्टल, हराएका व्यक्ति, UDB, विभाग, नदी, मौसम, सडक वा BIPAD खोज्नुहोस्...",
     
     // Header & Hero
+    btn_donate_online: "अनलाइन दान गर्नुहोस्",
     btn_legal_info: "कानुनी जानकारी",
     hero_title: "नेपालका सबै बाढी, मौसम तथा विपद् पोर्टलहरू एकै ठाउँमा",
     hero_subtitle: "विभिन्न मन्त्रालय, विभाग र सुरक्षा निकायका छरिएका आधिकारिक वेबसाइटहरू खोज्न अब भौंतारिनु पर्दैन। यहाँबाट सिधै आधिकारिक मूल सरकारी (.gov.np) पोर्टलहरूमा जानुहोस्।",
@@ -25,8 +26,8 @@ const translations = {
     cat_disaster: "🚨 विपद् तथा घटना (Disaster Incidents)",
     cat_roads: "🚧 सडक तथा यातायात (Roads & Highways)",
     cat_dams: "⚡ बाँध तथा जलाशय (Dams & Reservoirs)",
-    cat_health: "❤️ सहयोग गरौं (Lets Donate)",
     cat_hotlines: "📞 सुरक्षा तथा हटलाइन (Hotlines & S&R)",
+    cat_health: "🏥 स्वास्थ्य तथा राहत (Health & Relief)",
 
     // Portal Card Actions
     btn_open_portal: "🚀 मूल पोर्टल खोल्नुहोस्",
@@ -53,6 +54,14 @@ const translations = {
     stat_status: "निर्देशिका स्थिति (सक्रिय)",
     verified_sources_note: "🔒 प्रमाणीकृत आधिकारिक स्रोतहरू मात्र (.gov.np प्रत्यक्ष लिङ्क)",
 
+    // Donation Modal
+    modal_donate_title: "प्रधानमन्त्री दैवी प्रकोप उद्धार कोष तथा प्रत्यक्ष राहत संकलन",
+    modal_donate_subtitle: "नेपाल सरकारको आधिकारिक विपद् उद्धार कोषमा सिधै सहायता पठाउनुहोस् वा संकलन प्रतिवेदन हेर्नुहोस्।",
+    modal_donate_report_title: "📊 बाढी राहत संकलन प्रत्यक्ष पारदर्शी प्रतिवेदन",
+    modal_donate_report_btn: "प्रत्यक्ष प्रतिवेदन खोल्नुहोस् (rescue.opmcm.gov.np)",
+    modal_donate_card_title: "💳 अनलाइन कार्ड तथा गेटवे भुक्तानी",
+    modal_donate_qr_title: "📱 क्युआर तथा बैंक खाता ट्रान्सफर (Domestic & SWIFT)",
+
     // Footer & Disclaimer Modal
     footer_copy: "© 2026 Bipad Desk (विपद् डेस्क) — खुला नागरिक निर्देशिका पहल",
     footer_disclaimer: "⚠️ कानुनी घोषणा: यो एक स्वतन्त्र नागरिक निर्देशिका हो (सरकारी निकाय होइन)। सबै लिङ्कहरूले नेपाल सरकार तथा आधिकारिक निकायका मूल वेबसाइटहरू (.gov.np) मा सिधै रिडाइरेक्ट गर्दछन्।",
@@ -72,6 +81,7 @@ const translations = {
     search_placeholder: "Search portal, missing persons, UDB, river, weather, DOR, or BIPAD...",
 
     // Header & Hero
+    btn_donate_online: "Donate Online",
     btn_legal_info: "Legal Info",
     hero_title: "Direct Access to Nepal Disaster, Weather & River Watch Portals",
     hero_subtitle: "An independent civic directory aggregating scattered official disaster, river watch, weather forecast, and emergency hotlines. All portal cards redirect safely to verified official .gov.np platforms.",
@@ -87,8 +97,8 @@ const translations = {
     cat_disaster: "🚨 Disaster Incidents",
     cat_roads: "🚧 Roads & Highways",
     cat_dams: "⚡ Dams & Reservoirs",
-    cat_health: "❤️ Lets Donate",
     cat_hotlines: "📞 Security & Hotlines",
+    cat_health: "🏥 Health & Relief",
 
     // Portal Card Actions
     btn_open_portal: "🚀 Open Official Portal",
@@ -114,6 +124,14 @@ const translations = {
     stat_hotlines: "24/7 Hotlines",
     stat_status: "Directory Status (Active)",
     verified_sources_note: "🔒 Verified Official Sources Only (.gov.np Direct Redirects)",
+
+    // Donation Modal
+    modal_donate_title: "Prime Minister Disaster Relief Fund & Live Donations",
+    modal_donate_subtitle: "Contribute directly to the official Prime Minister Disaster Relief Fund or view live transparency reports.",
+    modal_donate_report_title: "📊 Live Relief Donation Transparency Report",
+    modal_donate_report_btn: "Open Live Report (rescue.opmcm.gov.np)",
+    modal_donate_card_title: "💳 Online Card & Gateway Payment",
+    modal_donate_qr_title: "📱 Domestic QR & SWIFT Wire Transfer",
 
     // Footer & Disclaimer Modal
     footer_copy: "© 2026 Bipad Desk — Open Civic Directory Initiative",

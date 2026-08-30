@@ -26,6 +26,9 @@
       </div>
 
       <div class="header-actions">
+        <button class="btn-donate-trigger" id="btn-open-donate" data-i18n="btn_donate_online">
+          अनलाइन दान गर्नुहोस्
+        </button>
         <button class="btn-disclaimer-trigger" id="btn-open-disclaimer" title="Legal Disclaimer & Source Attribution" data-i18n="btn_legal_info">
           कानुनी जानकारी
         </button>
@@ -123,19 +126,19 @@
       <div class="category-chips-bar">
         <button class="cat-chip-btn active" data-category="all" data-i18n="cat_all">🌐 सबै पोर्टलहरू</button>
         <button class="cat-chip-btn" data-category="missing" data-i18n="cat_missing" style="border-color: #DC2626; color: #DC2626;">🔍 हराएका/भेटिएका व्यक्ति (Missing & Found)</button>
-        <button class="cat-chip-btn" data-category="health" data-i18n="cat_health" style="border-color: #059669; color: #059669;">❤️ सहयोग गरौं (Lets Donate)</button>
         <button class="cat-chip-btn" data-category="river" data-i18n="cat_river">🌊 नदी तथा बाढी (River Watch)</button>
         <button class="cat-chip-btn" data-category="weather" data-i18n="cat_weather">🌧️ मौसम तथा वर्षा (Weather & Rain)</button>
         <button class="cat-chip-btn" data-category="disaster" data-i18n="cat_disaster">🚨 विपद् तथा घटना (Disasters)</button>
         <button class="cat-chip-btn" data-category="roads" data-i18n="cat_roads">🚧 सडक तथा यातायात (Roads)</button>
         <button class="cat-chip-btn" data-category="dams" data-i18n="cat_dams">⚡ बाँध तथा जलाशय (Dams)</button>
         <button class="cat-chip-btn" data-category="hotlines" data-i18n="cat_hotlines">📞 सुरक्षा तथा हटलाइन (S&R)</button>
+        <button class="cat-chip-btn" data-category="health" data-i18n="cat_health" style="border-color: #059669; color: #059669;">🏥 स्वास्थ्य तथा राहत (Health & Relief)</button>
       </div>
     </section>
 
     <!-- Directory Status Count Header -->
     <div class="directory-status-header">
-      <span id="portal-results-count" class="portal-results-count">16 portals</span>
+      <span id="portal-results-count" class="portal-results-count">17 portals</span>
       <span style="font-size: 0.8rem; color: var(--text-muted);" data-i18n="verified_sources_note">🔒 Verified Official Sources Only (.gov.np Direct Redirects)</span>
     </div>
 
@@ -193,9 +196,127 @@
     </div>
   </div>
 
+  <!-- =========================================================================
+       9. PRIME MINISTER DISASTER RELIEF FUND & DONATIONS MODAL
+       ========================================================================= -->
+  <div class="modal-overlay" id="donation-modal" role="dialog" aria-modal="true" aria-labelledby="donation-modal-title">
+    <div class="modal-box modal-box-donate">
+      <div class="modal-header">
+        <div>
+          <h3 id="donation-modal-title" data-i18n="modal_donate_title" style="color: #991B1B;">प्रधानमन्त्री दैवी प्रकोप उद्धार कोष तथा प्रत्यक्ष राहत संकलन</h3>
+          <p style="font-size: 0.82rem; color: var(--text-muted); margin-top: 2px;" data-i18n="modal_donate_subtitle">नेपाल सरकारको आधिकारिक विपद् उद्धार कोषमा सिधै सहायता पठाउनुहोस् वा संकलन प्रतिवेदन हेर्नुहोस्।</p>
+        </div>
+        <button class="btn-close-modal" id="btn-close-donate" aria-label="Close">&times;</button>
+      </div>
+      <div class="modal-body donation-modal-content">
+        
+        <!-- Live Relief Fund Collection Transparency Report -->
+        <div class="donate-transparency-card">
+          <div class="donate-transparency-header">
+            <span>📊 प्रत्यक्ष राहत संकलन प्रतिवेदन (Live Transparency Report)</span>
+            <span style="font-size: 0.75rem; background: #DC2626; color: #FFF; padding: 2px 8px; border-radius: 12px;">OPMCM LIVE</span>
+          </div>
+          <p style="font-size: 0.84rem; color: #7F1D1D; margin: 0;">
+            प्रधानमन्त्री तथा मन्त्रिपरिषद्को कार्यालयद्वारा सञ्चालित रसुवा बाढी तथा विपद् उद्धारमा संकलित कुल रकम, पारदर्शी दाताहरूको नामावली र वास्तविक समयको विवरण:
+          </p>
+          <a href="https://rescue.opmcm.gov.np/donations" target="_blank" rel="noopener noreferrer" class="donate-transparency-btn">
+            🚀 रसुवा बाढी राहत संकलन प्रत्यक्ष प्रतिवेदन खोल्नुहोस् (rescue.opmcm.gov.np)
+          </a>
+        </div>
+
+        <!-- Online Card Payment Gateways -->
+        <div>
+          <h4 style="font-size: 0.92rem; margin-bottom: 8px; color: var(--text-primary);" data-i18n="modal_donate_card_title">💳 अनलाइन कार्ड तथा गेटवे भुक्तानी (NCHL / HBL)</h4>
+          <div class="donate-gateways-grid">
+            <div class="donate-gateway-card">
+              <div>
+                <span class="donate-gateway-title">NCHL National Payment Gateway</span>
+                <p class="donate-gateway-desc">नेपाल क्लियरिङ हाउस मार्फत सबै राष्ट्रिय तथा अन्तर्राष्ट्रिय कार्ड/वालेट भुक्तानी।</p>
+              </div>
+              <a href="https://pmdrf.nchl.com.np/" target="_blank" rel="noopener noreferrer" class="btn-open-gateway">
+                🌐 pmdrf.nchl.com.np खोल्नुहोस्
+              </a>
+            </div>
+            <div class="donate-gateway-card">
+              <div>
+                <span class="donate-gateway-title">Himalayan Bank Gateway</span>
+                <p class="donate-gateway-desc">हिमालयन बैंक अनलाइन गेटवे मार्फत भिसा/मास्टरकार्डबाट सिधै कोषमा जम्मा।</p>
+              </div>
+              <a href="https://pmrelieffund.himalayanbank.com/" target="_blank" rel="noopener noreferrer" class="btn-open-gateway">
+                🌐 pmrelieffund.himalayanbank.com
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bank Accounts & SWIFT Transfer Table (from qr.pdf) -->
+        <div>
+          <h4 style="font-size: 0.92rem; margin-bottom: 8px; color: var(--text-primary);" data-i18n="modal_donate_qr_title">📱 क्युआर तथा आधिकारिक बैंक खाता विवरण (SWIFT Transfer)</h4>
+          <p style="font-size: 0.8rem; color: var(--text-muted); margin-bottom: 6px;">
+            <strong>खातावालाको नाम (Account Name):</strong> <code>PRIME MINISTER DISASTER RELIEF FUND</code> (Fonepay / NepalPay / UPI India)
+          </p>
+          <div class="bank-accounts-table-wrapper">
+            <table class="bank-accounts-table">
+              <thead>
+                <tr>
+                  <th>बैंक (Bank)</th>
+                  <th>मुद्रा</th>
+                  <th>खाता नम्बर (A/C Number)</th>
+                  <th>SWIFT Code</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><strong>राष्ट्रिय वाणिज्य बैंक (RBB)</strong></td>
+                  <td>NPR</td>
+                  <td><code>1130100003762001</code></td>
+                  <td><code>RBBANPKA</code></td>
+                </tr>
+                <tr>
+                  <td><strong>नेपाल बैंक लिमिटेड (NBL)</strong></td>
+                  <td>NPR</td>
+                  <td><code>00211600510039000003</code></td>
+                  <td><code>NEBLNPKA</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Himalayan Bank Ltd (USD)</strong></td>
+                  <td><strong style="color: #059669;">USD</strong></td>
+                  <td><code>01905631210046</code></td>
+                  <td><code>HIMANPKA</code></td>
+                </tr>
+                <tr>
+                  <td><strong>ग्लोबल आइएमई बैंक (Global IME)</strong></td>
+                  <td>NPR</td>
+                  <td><code>00401010000057</code></td>
+                  <td><code>GLBBNPKA</code></td>
+                </tr>
+                <tr>
+                  <td><strong>नबिल बैंक (Nabil Bank)</strong></td>
+                  <td>NPR</td>
+                  <td><code>1710017505285</code></td>
+                  <td><code>NARBNPKA</code></td>
+                </tr>
+                <tr>
+                  <td><strong>Standard Chartered Bank</strong></td>
+                  <td>NPR</td>
+                  <td><code>01013243801</code></td>
+                  <td><code>SCBLNPKA</code></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div style="background-color: var(--bg-body); padding: 10px 14px; border-radius: var(--radius-sm); font-size: 0.82rem; color: var(--text-muted);">
+          ☎️ <strong>आपतकालीन जानकारी तथा सहायता:</strong> NEOC हटलाइन: <code>1234</code> | हेलो सरकार: <code>+977-015971000</code>, <code>+977-9851145045</code>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- Application Scripts with Cache Busting -->
-  <script src="js/portals-data.js?v=2.2"></script>
-  <script src="js/i18n.js?v=2.2"></script>
-  <script src="js/app.js?v=2.2"></script>
+  <script src="js/portals-data.js?v=2.3"></script>
+  <script src="js/i18n.js?v=2.3"></script>
+  <script src="js/app.js?v=2.3"></script>
 </body>
 </html>

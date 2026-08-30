@@ -180,6 +180,34 @@ input, textarea, select {
   color: #FFFFFF;
 }
 
+.btn-donate-trigger {
+  background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
+  color: #FFFFFF;
+  border: none;
+  font-weight: 700;
+  padding: 8px 18px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.28);
+  transition: all var(--transition-fast);
+  white-space: nowrap;
+  font-family: inherit;
+}
+
+.btn-donate-trigger:hover {
+  background: linear-gradient(135deg, #B91C1C 0%, #991B1B 100%);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.38);
+}
+
+.btn-donate-trigger:active {
+  transform: translateY(0);
+}
+
 .btn-header-suggest {
   background-color: var(--gov-blue);
   color: #FFFFFF;
@@ -685,4 +713,153 @@ input, textarea, select {
 
 .disclaimer-callout strong {
   color: var(--gov-blue);
+}
+
+/* Donation Modal Styles */
+.modal-box-donate {
+  max-width: 680px;
+  width: 95%;
+}
+
+.donation-modal-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 75vh;
+  overflow-y: auto;
+  padding-right: 4px;
+}
+
+.donate-transparency-card {
+  background: linear-gradient(135deg, #FEF2F2 0%, #FFF1F2 100%);
+  border: 1.5px solid #FECACA;
+  border-radius: var(--radius-md);
+  padding: 14px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.donate-transparency-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  color: #991B1B;
+  font-size: 0.95rem;
+}
+
+.donate-transparency-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: #DC2626;
+  color: #FFFFFF !important;
+  font-weight: 700;
+  padding: 10px 16px;
+  border-radius: var(--radius-md);
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all var(--transition-fast);
+  margin-top: 4px;
+}
+
+.donate-transparency-btn:hover {
+  background: #B91C1C;
+  transform: translateY(-1px);
+}
+
+.donate-gateways-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 580px) {
+  .donate-gateways-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.donate-gateway-card {
+  background-color: var(--bg-body);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.donate-gateway-title {
+  font-weight: 700;
+  font-size: 0.88rem;
+  color: var(--text-primary);
+}
+
+.donate-gateway-desc {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.btn-open-gateway {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--gov-blue);
+  color: #FFFFFF !important;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.8rem;
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.btn-open-gateway:hover {
+  background-color: var(--gov-blue-hover);
+}
+
+.bank-accounts-table-wrapper {
+  overflow-x: auto;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+}
+
+.bank-accounts-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+  text-align: left;
+}
+
+.bank-accounts-table th {
+  background-color: var(--bg-body);
+  padding: 8px 10px;
+  font-weight: 700;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.bank-accounts-table td {
+  padding: 8px 10px;
+  border-bottom: 1px solid var(--border-color);
+  vertical-align: middle;
+}
+
+.btn-copy-acc {
+  background: none;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-sm);
+  padding: 2px 6px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  color: var(--gov-blue);
+  font-weight: 600;
+  transition: all var(--transition-fast);
+}
+
+.btn-copy-acc:hover {
+  background-color: rgba(2, 132, 199, 0.1);
 }

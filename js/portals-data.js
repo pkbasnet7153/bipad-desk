@@ -93,95 +93,7 @@ const GOV_PORTALS = [
     ]
   },
 
-  // 1. Health, Relief, Blood Bank & PM Disaster Relief Fund (Lets Donate)
-  {
-    id: 'pm-disaster-relief-fund',
-    category: 'health',
-    categoryNameNe: 'सहयोग गरौं',
-    categoryNameEn: 'Lets Donate',
-    nameNe: 'प्रधानमन्त्री दैवी प्रकोप उद्धार कोष (PM Disaster Relief Fund)',
-    nameEn: 'Prime Minister Disaster Relief Fund (PMDRF) Official Donation Gateway',
-    departmentNe: 'प्रधानमन्त्री तथा मन्त्रिपरिषद्को कार्यालय (OPMCM)',
-    departmentEn: 'Office of the Prime Minister and Council of Ministers (OPMCM)',
-    url: 'https://pmdrf.nchl.com.np/',
-    badge: 'GOV_OFFICIAL',
-    isGov: true,
-    status: 'ONLINE',
-    descriptionNe: 'नेपाल सरकारको आधिकारिक प्रधानमन्त्री दैवी प्रकोप उद्धार कोषमा कार्ड, क्युआर (Fonepay/NepalPay), र अन्तर्राष्ट्रिय SWIFT मार्फत विपद् पीडितहरूका लागि सिधै सहयोग पठाउने पोर्टल।',
-    descriptionEn: 'Official government portal to contribute to the Prime Minister Disaster Relief Fund via cards, QR codes (Fonepay/NepalPay/UPI), and international SWIFT wire transfers.',
-    featuresNe: ['अनलाइन कार्ड पेमेन्ट (NCHL/HBL)', 'Fonepay / NepalPay QR', 'SWIFT बैंक ट्रान्सफर', 'कर छुट सुविधा'],
-    featuresEn: ['Online Card Payment', 'Domestic QR & UPI', 'SWIFT Wire Transfer', 'Official Tax Exemption'],
-    quickLinks: [
-      { titleNe: 'NCHL पेमेन्ट गेटवे', titleEn: 'NCHL Payment Portal', url: 'https://pmdrf.nchl.com.np/' },
-      { titleNe: 'हिमालयन बैंक गेटवे', titleEn: 'HBL PMDRF Gateway', url: 'https://pmrelieffund.himalayanbank.com/' }
-    ]
-  },
-  {
-    id: 'heoc-health',
-    category: 'health',
-    categoryNameNe: 'सहयोग गरौं',
-    categoryNameEn: 'Lets Donate',
-    nameNe: 'स्वास्थ्य आपतकालीन कार्यसञ्चालन केन्द्र (HEOC) - स्वास्थ्य मन्त्रालय',
-    nameEn: 'Health Emergency Operation Center (HEOC) - Ministry of Health & Population',
-    departmentNe: 'स्वास्थ्य तथा जनसंख्या मन्त्रालय (MoHP)',
-    departmentEn: 'Ministry of Health and Population',
-    url: 'https://heoc.mohp.gov.np/',
-    badge: 'GOV_OFFICIAL',
-    isGov: true,
-    status: 'ONLINE',
-    descriptionNe: 'बाढीपछिको महामारी (झाडापखाला, हैजा, डेंगु) रोकथाम, आपतकालीन औषधि आपूर्ति, अस्थायी अस्पताल र चिकित्सक परिचालन।',
-    descriptionEn: 'Post-flood waterborne disease surveillance, emergency medical supplies distribution, mobile health camps, and hospital bed availability.',
-    featuresNe: ['महामारी पूर्वसूचना', 'आपतकालीन औषधि समन्वय', 'अस्पताल हटलाइन'],
-    featuresEn: ['Epidemic Surveillance', 'Emergency Medicines', 'Hospital Hotlines'],
-    quickLinks: [
-      { titleNe: 'स्वास्थ्य बुलेटिन', titleEn: 'Health Situation Reports', url: 'https://heoc.mohp.gov.np/' }
-    ]
-  },
-  {
-    id: 'mohp-blood-bank',
-    category: 'health',
-    categoryNameNe: 'सहयोग गरौं',
-    categoryNameEn: 'Lets Donate',
-    nameNe: 'स्वास्थ्य तथा जनसङ्ख्या मन्त्रालय - राष्ट्रिय रक्तसञ्चार तथा ब्लड बैंक स्थिति',
-    nameEn: 'Ministry of Health (MoHP) - National Blood Bank Stock Status',
-    departmentNe: 'स्वास्थ्य तथा जनसङ्ख्या मन्त्रालय (MoHP)',
-    departmentEn: 'Ministry of Health and Population (MoHP)',
-    url: 'https://freehealth.mohp.gov.np/blood-bank',
-    badge: 'GOV_OFFICIAL',
-    isGov: true,
-    status: 'ONLINE',
-    descriptionNe: 'बाढी, पहिरो तथा आपतकालीन घाइतेहरूको उपचारका लागि देशभरका अस्पताल र रेडक्रस रक्तसञ्चार केन्द्रहरूमा रगतको मौज्दात स्थिति हेर्ने आधिकारिक पोर्टल।',
-    descriptionEn: 'Official national dashboard tracking real-time blood group availability and stock in hospital blood banks and Red Cross transfusion centers across Nepal.',
-    featuresNe: ['रक्त समूह उपलब्धता', 'अस्पताल अनुसार मौज्दात', 'आपतकालीन सम्पर्क'],
-    featuresEn: ['Blood Group Availability', 'Hospital-wise Inventory', 'Emergency Transfusion Contacts'],
-    quickLinks: [
-      { titleNe: 'ब्लड बैंक मौज्दात हेर्नुहोस्', titleEn: 'Check Blood Availability', url: 'https://freehealth.mohp.gov.np/blood-bank' }
-    ]
-  },
-  {
-    id: 'nrcs-disaster',
-    category: 'health',
-    categoryNameNe: 'सहयोग गरौं',
-    categoryNameEn: 'Lets Donate',
-    nameNe: 'नेपाल रेडक्रस सोसाइटी - बाढी राहत, एम्बुलेन्स तथा आश्रय सेवा',
-    nameEn: 'Nepal Red Cross Society (NRCS) - Flood Relief & Emergency Response',
-    departmentNe: 'नेपाल रेडक्रस सोसाइटी केन्द्रीय कार्यालय',
-    departmentEn: 'Nepal Red Cross Society National Headquarters',
-    url: 'https://nrcs.org/',
-    badge: 'HUMANITARIAN_AUTHORITY',
-    isGov: false,
-    status: 'ONLINE',
-    descriptionNe: '७७ वटै जिल्लामा एम्बुलेन्स सेवा, प्राथमिक उपचार, रक्तसञ्चार (Blood Bank), अस्थायी त्रिपाल/राहत वितरण र शिविर व्यवस्थापन।',
-    descriptionEn: '77-district ambulance network, first-aid response, emergency blood banks, non-food relief distribution, and temporary shelter management.',
-    featuresNe: ['११३० हटलाइन', 'एम्बुलेन्स खोजी सेवा', 'रक्तसञ्चार सेवा', 'सामुदायिक राहत शिविर'],
-    featuresEn: ['1130 Hotline', 'Ambulance Finder', 'Blood Bank Service', 'Relief Camps'],
-    quickLinks: [
-      { titleNe: '११३० रेडक्रस कल', titleEn: 'Call Red Cross 1130', url: 'tel:1130' },
-      { titleNe: 'राहत कार्यक्रम', titleEn: 'NRCS Relief Operations', url: 'https://nrcs.org/' }
-    ]
-  },
-
-  // 2. River & Flood Monitoring
+  // 1. River & Flood Monitoring
   {
     id: 'dhm-hydrology',
     category: 'river',
@@ -500,6 +412,116 @@ const GOV_PORTALS = [
     featuresEn: ['Toll-free 1155', '24/7 Automated IVR', 'Basin Level Audio Reports'],
     quickLinks: [
       { titleNe: '११५५ मा कल गर्नुहोस्', titleEn: 'Call 1155 Now', url: 'tel:1155' }
+    ]
+  },
+
+  // 7. Health, Relief & Live Flood Donation Report (Last Category)
+  {
+    id: 'opmcm-donation-report',
+    category: 'health',
+    categoryNameNe: 'स्वास्थ्य तथा राहत',
+    categoryNameEn: 'Health & Relief',
+    nameNe: 'प्रधानमन्त्री तथा मन्त्रिपरिषद्को कार्यालय - बाढी राहत संकलन प्रत्यक्ष पारदर्शी प्रतिवेदन',
+    nameEn: 'OPMCM - Live Flood Relief Donation & Transparency Report',
+    departmentNe: 'प्रधानमन्त्री तथा मन्त्रिपरिषद्को कार्यालय (OPMCM)',
+    departmentEn: 'Office of the Prime Minister and Council of Ministers (OPMCM)',
+    url: 'https://rescue.opmcm.gov.np/donations',
+    badge: 'GOV_OFFICIAL',
+    isGov: true,
+    status: 'ONLINE',
+    descriptionNe: 'बाढी, पहिरो तथा विपद् राहतका लागि प्रधानमन्त्री दैवी प्रकोप उद्धार कोषमा संकलित कुल रकम, प्रत्यक्ष दाताहरूको सूची र पारदर्शी खर्च स्थिति हेर्ने आधिकारिक सरकारी प्रतिवेदन।',
+    descriptionEn: 'Official Government of Nepal live transparency dashboard publishing real-time relief funds received, donor lists, and expenditure status for flood disaster recovery.',
+    featuresNe: ['प्रत्यक्ष संकलित रकम', 'पारदर्शी दाता सूची', 'रसुवा बाढी उद्धार विवरण'],
+    featuresEn: ['Live Funds Received', 'Public Donor Transparency', 'Rescue & Relief Updates'],
+    quickLinks: [
+      { titleNe: 'प्रत्यक्ष प्रतिवेदन हेर्नुहोस्', titleEn: 'Open Live Report', url: 'https://rescue.opmcm.gov.np/donations' },
+      { titleNe: 'अनलाइन दान गर्नुहोस्', titleEn: 'Donate Online', url: 'https://pmdrf.nchl.com.np/' }
+    ]
+  },
+  {
+    id: 'pm-disaster-relief-fund',
+    category: 'health',
+    categoryNameNe: 'स्वास्थ्य तथा राहत',
+    categoryNameEn: 'Health & Relief',
+    nameNe: 'प्रधानमन्त्री दैवी प्रकोप उद्धार कोष (PM Disaster Relief Fund)',
+    nameEn: 'Prime Minister Disaster Relief Fund (PMDRF) Official Donation Gateway',
+    departmentNe: 'प्रधानमन्त्री तथा मन्त्रिपरिषद्को कार्यालय (OPMCM)',
+    departmentEn: 'Office of the Prime Minister and Council of Ministers (OPMCM)',
+    url: 'https://pmdrf.nchl.com.np/',
+    badge: 'GOV_OFFICIAL',
+    isGov: true,
+    status: 'ONLINE',
+    descriptionNe: 'नेपाल सरकारको आधिकारिक प्रधानमन्त्री दैवी प्रकोप उद्धार कोषमा कार्ड, क्युआर (Fonepay/NepalPay), र अन्तर्राष्ट्रिय SWIFT मार्फत विपद् पीडितहरूका लागि सिधै सहयोग पठाउने पोर्टल।',
+    descriptionEn: 'Official government portal to contribute to the Prime Minister Disaster Relief Fund via cards, QR codes (Fonepay/NepalPay/UPI), and international SWIFT wire transfers.',
+    featuresNe: ['अनलाइन कार्ड पेमेन्ट (NCHL/HBL)', 'Fonepay / NepalPay QR', 'SWIFT बैंक ट्रान्सफर', 'कर छुट सुविधा'],
+    featuresEn: ['Online Card Payment', 'Domestic QR & UPI', 'SWIFT Wire Transfer', 'Official Tax Exemption'],
+    quickLinks: [
+      { titleNe: 'NCHL पेमेन्ट गेटवे', titleEn: 'NCHL Payment Portal', url: 'https://pmdrf.nchl.com.np/' },
+      { titleNe: 'हिमालयन बैंक गेटवे', titleEn: 'HBL PMDRF Gateway', url: 'https://pmrelieffund.himalayanbank.com/' }
+    ]
+  },
+  {
+    id: 'mohp-blood-bank',
+    category: 'health',
+    categoryNameNe: 'स्वास्थ्य तथा राहत',
+    categoryNameEn: 'Health & Relief',
+    nameNe: 'स्वास्थ्य तथा जनसङ्ख्या मन्त्रालय - राष्ट्रिय रक्तसञ्चार तथा ब्लड बैंक स्थिति',
+    nameEn: 'Ministry of Health (MoHP) - National Blood Bank Stock Status',
+    departmentNe: 'स्वास्थ्य तथा जनसङ्ख्या मन्त्रालय (MoHP)',
+    departmentEn: 'Ministry of Health and Population (MoHP)',
+    url: 'https://freehealth.mohp.gov.np/blood-bank',
+    badge: 'GOV_OFFICIAL',
+    isGov: true,
+    status: 'ONLINE',
+    descriptionNe: 'बाढी, पहिरो तथा आपतकालीन घाइतेहरूको उपचारका लागि देशभरका अस्पताल र रेडक्रस रक्तसञ्चार केन्द्रहरूमा रगतको मौज्दात स्थिति हेर्ने आधिकारिक पोर्टल।',
+    descriptionEn: 'Official national dashboard tracking real-time blood group availability and stock in hospital blood banks and Red Cross transfusion centers across Nepal.',
+    featuresNe: ['रक्त समूह उपलब्धता', 'अस्पताल अनुसार मौज्दात', 'आपतकालीन सम्पर्क'],
+    featuresEn: ['Blood Group Availability', 'Hospital-wise Inventory', 'Emergency Transfusion Contacts'],
+    quickLinks: [
+      { titleNe: 'ब्लड बैंक मौज्दात हेर्नुहोस्', titleEn: 'Check Blood Availability', url: 'https://freehealth.mohp.gov.np/blood-bank' }
+    ]
+  },
+  {
+    id: 'heoc-health',
+    category: 'health',
+    categoryNameNe: 'स्वास्थ्य तथा राहत',
+    categoryNameEn: 'Health & Relief',
+    nameNe: 'स्वास्थ्य आपतकालीन कार्यसञ्चालन केन्द्र (HEOC) - स्वास्थ्य मन्त्रालय',
+    nameEn: 'Health Emergency Operation Center (HEOC) - Ministry of Health & Population',
+    departmentNe: 'स्वास्थ्य तथा जनसंख्या मन्त्रालय (MoHP)',
+    departmentEn: 'Ministry of Health and Population',
+    url: 'https://heoc.mohp.gov.np/',
+    badge: 'GOV_OFFICIAL',
+    isGov: true,
+    status: 'ONLINE',
+    descriptionNe: 'बाढीपछिको महामारी (झाडापखाला, हैजा, डेंगु) रोकथाम, आपतकालीन औषधि आपूर्ति, अस्थायी अस्पताल र चिकित्सक परिचालन।',
+    descriptionEn: 'Post-flood waterborne disease surveillance, emergency medical supplies distribution, mobile health camps, and hospital bed availability.',
+    featuresNe: ['महामारी पूर्वसूचना', 'आपतकालीन औषधि समन्वय', 'अस्पताल हटलाइन'],
+    featuresEn: ['Epidemic Surveillance', 'Emergency Medicines', 'Hospital Hotlines'],
+    quickLinks: [
+      { titleNe: 'स्वास्थ्य बुलेटिन', titleEn: 'Health Situation Reports', url: 'https://heoc.mohp.gov.np/' }
+    ]
+  },
+  {
+    id: 'nrcs-disaster',
+    category: 'health',
+    categoryNameNe: 'स्वास्थ्य तथा राहत',
+    categoryNameEn: 'Health & Relief',
+    nameNe: 'नेपाल रेडक्रस सोसाइटी - बाढी राहत, एम्बुलेन्स तथा आश्रय सेवा',
+    nameEn: 'Nepal Red Cross Society (NRCS) - Flood Relief & Emergency Response',
+    departmentNe: 'नेपाल रेडक्रस सोसाइटी केन्द्रीय कार्यालय',
+    departmentEn: 'Nepal Red Cross Society National Headquarters',
+    url: 'https://nrcs.org/',
+    badge: 'HUMANITARIAN_AUTHORITY',
+    isGov: false,
+    status: 'ONLINE',
+    descriptionNe: '७७ वटै जिल्लामा एम्बुलेन्स सेवा, प्राथमिक उपचार, रक्तसञ्चार (Blood Bank), अस्थायी त्रिपाल/राहत वितरण र शिविर व्यवस्थापन।',
+    descriptionEn: '77-district ambulance network, first-aid response, emergency blood banks, non-food relief distribution, and temporary shelter management.',
+    featuresNe: ['११३० हटलाइन', 'एम्बुलेन्स खोजी सेवा', 'रक्तसञ्चार सेवा', 'सामुदायिक राहत शिविर'],
+    featuresEn: ['1130 Hotline', 'Ambulance Finder', 'Blood Bank Service', 'Relief Camps'],
+    quickLinks: [
+      { titleNe: '११३० रेडक्रस कल', titleEn: 'Call Red Cross 1130', url: 'tel:1130' },
+      { titleNe: 'राहत कार्यक्रम', titleEn: 'NRCS Relief Operations', url: 'https://nrcs.org/' }
     ]
   }
 ];
