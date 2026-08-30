@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="ne">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Bipad Desk (विपद् डेस्क) | Nepal Disaster & Flood Government Portals Directory</title>
+  <meta name="description" content="Bipad Desk - Unified directory and gateway to all official Nepal government disaster, river watch, hydrology, weather, missing persons, road status, and emergency response portals.">
+  
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/dashboard.css">
+  <link rel="stylesheet" href="css/mobile.css">
+</head>
+<body>
+
+  <!-- =========================================================================
+       1. TOP HEADER
+       ========================================================================= -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand-section">
+        <img src="assets/nepal-emblem.svg" alt="Nepal Government Emblem" class="brand-logo">
+        <div class="brand-text">
+          <h1 data-i18n="portal_title">विपद् डेस्क (Bipad Desk) - नेपाल</h1>
+          <p data-i18n="portal_subtitle">नेपाल सरकारका सम्पूर्ण बाढी तथा विपद् पोर्टलहरू एकै ठाउँमा</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <div class="lang-switch">
+          <button class="lang-btn active" data-lang="ne">ने</button>
+          <button class="lang-btn" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       2. LIVE RIVER WARNING TICKER (DHM / BIPAD STREAM)
+       ========================================================================= -->
+  <div class="live-ticker-strip">
+    <div class="container ticker-inner">
+      <div class="ticker-badge-wrapper">
+        <span class="ticker-badge">
+          <span class="ticker-live-dot"></span>
+          <span class="badge-text" data-i18n="live_ticker_badge">🔴 प्रत्यक्ष अपडेट</span>
+        </span>
+      </div>
+      <div class="ticker-track-container" id="ticker-track-container" title="Pause on hover">
+        <div class="ticker-marquee" id="ticker-marquee">
+          <span class="ticker-item" id="live-ticker-text" data-i18n="live_ticker_loading">
+            BIPAD तथा DHM बाट ताजा नदी तथ्याङ्क लोड हुँदै...
+          </span>
+          <span class="ticker-item ticker-item-duplicate" id="live-ticker-duplicate" aria-hidden="true">
+            BIPAD तथा DHM बाट ताजा नदी तथ्याङ्क लोड हुँदै...
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       3. MAIN CONTAINER
+       ========================================================================= -->
+  <main class="container">
+
+    <!-- HERO GATEWAY BANNER -->
+    <section class="hero-gateway">
+      <span class="hero-tag" data-i18n="hero_badge">🇳🇵 आधिकारिक सरकारी लिङ्क डाइरेक्टरी</span>
+      <h2 class="hero-gateway-title" data-i18n="hero_title">
+        नेपाल सरकारका सबै बाढी, मौसम तथा विपद् पोर्टलहरू एकै ठाउँमा
+      </h2>
+      <p class="hero-gateway-subtitle" data-i18n="hero_subtitle">
+        विभिन्न मन्त्रालय, विभाग र सुरक्षा निकायका छरिएका आधिकारिक वेबसाइटहरू खोज्न अब भौंतारिनु पर्दैन। यहाँबाट सिधै आधिकारिक मूल पोर्टलहरूमा जानुहोस्।
+      </p>
+
+      <!-- Global Search Bar -->
+      <div class="hero-search-box">
+        <span class="hero-search-icon">🔍</span>
+        <input type="text" id="portal-search-input" data-i18n-placeholder="search_placeholder" placeholder="पोर्टल, हराएका व्यक्ति, UDB, विभाग, नदी, मौसम, सडक वा BIPAD खोज्नुहोस्...">
+      </div>
+
+      <!-- Quick Metrics Counter -->
+      <div class="hero-stats-row">
+        <div class="hero-stat-item">
+          <span class="stat-num" id="stat-total-portals">16</span>
+          <span class="stat-txt" data-i18n="stat_total_portals">सूचीकृत सरकारी पोर्टल</span>
+        </div>
+        <div class="hero-stat-item">
+          <span class="stat-num" id="stat-categories-count">8</span>
+          <span class="stat-txt" data-i18n="stat_categories">विपद् विषयगत वर्ग</span>
+        </div>
+        <div class="hero-stat-item">
+          <span class="stat-num" id="stat-hotlines-count">6</span>
+          <span class="stat-txt" data-i18n="stat_hotlines">२४/७ हटलाइन सेवा</span>
+        </div>
+        <div class="hero-stat-item">
+          <span class="stat-num" style="color: #4ADE80;">100%</span>
+          <span class="stat-txt" data-i18n="stat_status">प्रणाली स्थिति (Active)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         4. 24/7 EMERGENCY HOTLINES (1-TAP CALL)
+         ======================================================================= -->
+    <section class="hotlines-section">
+      <h3 class="section-header-title">
+        <span>🚨</span>
+        <span data-i18n="hotlines_heading">२४/७ राष्ट्रिय आपतकालीन हटलाइनहरू (१-ट्याप कल):</span>
+      </h3>
+      <div class="hotlines-grid" id="hotlines-container">
+        <!-- Dynamically rendered -->
+      </div>
+    </section>
+
+    <!-- =======================================================================
+         5. CATEGORY FILTER CHIPS
+         ======================================================================= -->
+    <section class="category-filter-section">
+      <div class="category-chips-bar">
+        <button class="cat-chip-btn active" data-category="all" data-i18n="cat_all">🌐 सबै पोर्टलहरू</button>
+        <button class="cat-chip-btn" data-category="missing" data-i18n="cat_missing" style="border-color: #DC2626; color: #DC2626;">🔍 हराएका/भेटिएका व्यक्ति (Missing & Found)</button>
+        <button class="cat-chip-btn" data-category="river" data-i18n="cat_river">🌊 नदी तथा बाढी (River Watch)</button>
+        <button class="cat-chip-btn" data-category="weather" data-i18n="cat_weather">🌧️ मौसम तथा वर्षा (Weather & Rain)</button>
+        <button class="cat-chip-btn" data-category="disaster" data-i18n="cat_disaster">🚨 विपद् तथा घटना (Disasters)</button>
+        <button class="cat-chip-btn" data-category="roads" data-i18n="cat_roads">🚧 सडक तथा यातायात (Roads)</button>
+        <button class="cat-chip-btn" data-category="dams" data-i18n="cat_dams">⚡ बाँध तथा जलाशय (Dams)</button>
+        <button class="cat-chip-btn" data-category="health" data-i18n="cat_health">🏥 स्वास्थ्य तथा राहत (Health & Relief)</button>
+        <button class="cat-chip-btn" data-category="hotlines" data-i18n="cat_hotlines">📞 सुरक्षा तथा हटलाइन (S&R)</button>
+      </div>
+    </section>
+
+    <!-- Directory Status Count Header -->
+    <div class="directory-status-header">
+      <span id="portal-results-count" class="portal-results-count">16 portals</span>
+      <span style="font-size: 0.8rem; color: var(--text-muted);">🔒 Verified Official Government Sources Only</span>
+    </div>
+
+    <!-- =======================================================================
+         6. PORTAL CARDS DIRECTORY GRID
+         ======================================================================= -->
+    <section class="portals-grid" id="portals-grid">
+      <!-- Dynamically rendered portal cards -->
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       7. FOOTER
+       ========================================================================= -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div>
+        <p data-i18n="footer_copy">© 2026 Nepal Flood & Disaster Portals Gateway. All Rights Reserved.</p>
+        <p style="font-size: 0.78rem; color: var(--text-muted); margin-top: 4px;" data-i18n="footer_disclaimer">
+          यस निर्देशिकाले प्रयोगकर्तालाई सम्बन्धित नेपाल सरकारका आधिकारिक मूल वेबसाइटहरूमा सिधै रिडाइरेक्ट गर्दछ।
+        </p>
+      </div>
+      <div style="display: flex; gap: 14px;">
+        <a href="#top" style="color: var(--gov-blue); font-weight: 600;">⬆ Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Application Scripts -->
+  <script src="js/portals-data.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

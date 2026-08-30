@@ -1,0 +1,337 @@
+/* ==========================================================================
+   Nepal Flood & Disaster Official Government Portals Directory - Portal Cards & Directory CSS
+   ========================================================================== */
+
+/* Category Chips Filter Bar */
+.category-filter-section {
+  margin-bottom: 20px;
+}
+
+.category-chips-bar {
+  display: flex;
+  gap: 8px;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+}
+
+.cat-chip-btn {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-full);
+  padding: 8px 16px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.cat-chip-btn:hover {
+  background-color: #F1F5F9;
+  border-color: var(--border-hover);
+  color: var(--text-main);
+}
+
+.cat-chip-btn.active {
+  background-color: var(--gov-navy);
+  color: #FFFFFF;
+  border-color: var(--gov-navy);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Results Count & Filter Status */
+.directory-status-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+}
+
+.portal-results-count {
+  font-weight: 700;
+  color: var(--text-main);
+}
+
+/* ==========================================================================
+   PORTAL CARDS GRID
+   ========================================================================== */
+.portals-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .portals-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1100px) {
+  .portals-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.portal-card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.portal-card:hover {
+  transform: translateY(-3px);
+  border-color: #94A3B8;
+  box-shadow: var(--shadow-md);
+}
+
+/* Card Header */
+.portal-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  margin-bottom: 12px;
+}
+
+.portal-status-badge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.portal-status-badge.badge-gov {
+  background-color: #DCFCE7;
+  color: #15803D;
+  border: 1px solid #BBF7D0;
+}
+
+.portal-status-badge.badge-authority {
+  background-color: #E0F2FE;
+  color: #0369A1;
+  border: 1px solid #BAE6FD;
+}
+
+.pulse-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background-color: #16A34A;
+  box-shadow: 0 0 0 2px rgba(22, 163, 74, 0.2);
+}
+
+.portal-category-tag {
+  font-size: 0.72rem;
+  font-weight: 600;
+  background-color: var(--bg-card-subtle);
+  color: var(--text-secondary);
+  padding: 2px 8px;
+  border-radius: var(--radius-sm);
+}
+
+/* Title & Department */
+.portal-title {
+  font-size: 1.08rem;
+  font-weight: 800;
+  color: var(--text-main);
+  line-height: 1.35;
+  margin-bottom: 6px;
+}
+
+.portal-title a {
+  color: inherit;
+  transition: color 0.15s ease;
+}
+
+.portal-title a:hover {
+  color: var(--gov-blue);
+  text-decoration: underline;
+}
+
+.portal-dept {
+  font-size: 0.78rem;
+  color: var(--text-secondary);
+  background-color: #F8FAFC;
+  padding: 4px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid #F1F5F9;
+  margin-bottom: 12px;
+  line-height: 1.3;
+}
+
+/* Description */
+.portal-desc {
+  font-size: 0.85rem;
+  color: #334155;
+  line-height: 1.45;
+  margin-bottom: 14px;
+}
+
+/* Feature Tag Pills */
+.portal-features-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.feature-tag {
+  font-size: 0.72rem;
+  background-color: #F1F5F9;
+  color: #334155;
+  padding: 3px 8px;
+  border-radius: var(--radius-sm);
+  border: 1px solid #E2E8F0;
+}
+
+/* Quick Action Links */
+.card-quick-links {
+  background-color: #F8FAFC;
+  border: 1px dashed #CBD5E1;
+  border-radius: var(--radius-md);
+  padding: 8px 10px;
+  margin-bottom: 16px;
+}
+
+.quick-links-title {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--text-secondary);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 4px;
+}
+
+.quick-links-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.quick-link-chip {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--gov-blue);
+  background-color: #FFFFFF;
+  border: 1px solid #BFDBFE;
+  border-radius: var(--radius-sm);
+  padding: 3px 8px;
+  transition: all 0.15s ease;
+}
+
+.quick-link-chip:hover {
+  background-color: #EFF6FF;
+  border-color: var(--gov-blue);
+}
+
+/* Action Buttons */
+.portal-card-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: auto;
+  padding-top: 10px;
+}
+
+.btn-redirect-primary {
+  flex: 1;
+  background-color: var(--gov-blue);
+  color: #FFFFFF;
+  font-weight: 700;
+  font-size: 0.88rem;
+  padding: 10px 14px;
+  border-radius: var(--radius-md);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  box-shadow: 0 2px 6px rgba(2, 132, 199, 0.25);
+  transition: all 0.15s ease;
+}
+
+.btn-redirect-primary:hover {
+  background-color: var(--gov-blue-hover);
+  transform: translateY(-1px);
+}
+
+.redirect-arrow {
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.btn-card-util {
+  background-color: var(--bg-card-subtle);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-md);
+  padding: 10px 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.btn-card-util:hover {
+  background-color: var(--border-color);
+  color: var(--text-main);
+}
+
+/* Card Footer */
+.portal-card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid var(--border-color);
+  padding-top: 8px;
+  margin-top: 12px;
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.portal-url-display {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  max-width: 60%;
+}
+
+.portal-ping-status {
+  color: var(--gov-green);
+  font-weight: 600;
+}
+
+/* Empty Results Box */
+.no-results-box {
+  grid-column: 1 / -1;
+  background-color: var(--bg-card);
+  border: 1px dashed var(--border-hover);
+  border-radius: var(--radius-lg);
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.btn-reset-filter {
+  background-color: var(--gov-navy);
+  color: #FFFFFF;
+  font-weight: 600;
+  font-size: 0.85rem;
+  padding: 8px 18px;
+  border-radius: var(--radius-md);
+  margin-top: 14px;
+}

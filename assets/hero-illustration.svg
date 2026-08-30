@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 280" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#E0F2FE" />
+      <stop offset="50%" stop-color="#BAE6FD" />
+      <stop offset="100%" stop-color="#E0F7FA" />
+    </linearGradient>
+    <linearGradient id="snowPeak" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="60%" stop-color="#E2E8F0" />
+      <stop offset="100%" stop-color="#CBD5E1" />
+    </linearGradient>
+    <linearGradient id="hillBack" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#94A3B8" />
+      <stop offset="100%" stop-color="#64748B" />
+    </linearGradient>
+    <linearGradient id="hillMid" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38BDF8" />
+      <stop offset="100%" stop-color="#0284C7" />
+    </linearGradient>
+    <linearGradient id="hillFront" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#047857" />
+    </linearGradient>
+    <linearGradient id="waterGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7DD3FC" />
+      <stop offset="100%" stop-color="#38BDF8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Sky background -->
+  <rect width="600" height="280" fill="url(#skyGrad)" rx="16"/>
+
+  <!-- Soft Clouds -->
+  <path d="M 50,70 Q 70,50 100,65 Q 120,40 150,60 Q 180,50 200,70 Z" fill="#FFFFFF" opacity="0.6"/>
+  <path d="M 400,60 Q 420,40 450,55 Q 470,35 500,50 Q 530,45 550,65 Z" fill="#FFFFFF" opacity="0.5"/>
+
+  <!-- Far Himalayan Snowy Peaks -->
+  <polygon points="120,160 220,50 320,160" fill="url(#snowPeak)"/>
+  <polygon points="220,50 250,90 280,75 320,160 220,160" fill="#CBD5E1" opacity="0.7"/>
+  
+  <polygon points="260,170 360,40 460,170" fill="url(#snowPeak)"/>
+  <polygon points="360,40 390,85 410,70 460,170 360,170" fill="#CBD5E1" opacity="0.7"/>
+  
+  <polygon points="20,180 100,70 180,180" fill="url(#snowPeak)"/>
+
+  <!-- Mid Range Hills -->
+  <path d="M 0,200 Q 140,110 280,180 Q 420,100 600,190 L 600,280 L 0,280 Z" fill="url(#hillBack)" opacity="0.4"/>
+  <path d="M 0,210 Q 120,130 260,190 Q 440,130 600,210 L 600,280 L 0,280 Z" fill="#475569" opacity="0.3"/>
+
+  <!-- River / Lake Bed in foreground -->
+  <path d="M 0,215 Q 150,190 300,210 Q 450,195 600,215 L 600,280 L 0,280 Z" fill="url(#waterGrad)"/>
+  
+  <!-- Island / River Bank with Greenery and House -->
+  <path d="M 160,240 Q 230,180 340,185 Q 420,180 480,240 Q 320,260 160,240 Z" fill="url(#hillFront)"/>
+
+  <!-- Traditional Nepali Stone/Wood House on Island -->
+  <!-- House base -->
+  <rect x="220" y="155" width="65" height="35" fill="#E2E8F0" stroke="#475569" stroke-width="1.5"/>
+  <!-- Second floor / balcony -->
+  <rect x="225" y="140" width="55" height="18" fill="#B45309" stroke="#78350F" stroke-width="1.5"/>
+  <!-- Pagoda / Gable Slanted Roof -->
+  <polygon points="210,140 252,115 295,140" fill="#991B1B" stroke="#7F1D1D" stroke-width="2"/>
+  <polygon points="220,120 252,105 285,120" fill="#DC2626"/>
+  <!-- Door & Windows -->
+  <rect x="245" y="168" width="12" height="22" fill="#78350F"/>
+  <rect x="228" y="162" width="10" height="12" fill="#0284C7" stroke="#334155" stroke-width="1"/>
+  <rect x="265" y="162" width="10" height="12" fill="#0284C7" stroke="#334155" stroke-width="1"/>
+
+  <!-- Trees & Pine Vegetation -->
+  <!-- Tree 1 -->
+  <polygon points="310,185 300,165 320,165" fill="#065F46"/>
+  <polygon points="310,170 302,150 318,150" fill="#047857"/>
+  <polygon points="310,155 305,138 315,138" fill="#10B981"/>
+  <rect x="308" y="185" width="4" height="10" fill="#78350F"/>
+
+  <!-- Tree 2 -->
+  <polygon points="330,190 322,170 338,170" fill="#065F46"/>
+  <polygon points="330,175 324,158 336,158" fill="#047857"/>
+  <rect x="328" y="190" width="4" height="8" fill="#78350F"/>
+
+  <!-- Tree 3 (Left of house) -->
+  <polygon points="195,190 185,170 205,170" fill="#065F46"/>
+  <polygon points="195,175 188,155 202,155" fill="#10B981"/>
+  <rect x="193" y="190" width="4" height="8" fill="#78350F"/>
+
+  <!-- Water ripple highlights -->
+  <path d="M 80,240 Q 110,236 140,240" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.6" stroke-linecap="round"/>
+  <path d="M 450,250 Q 480,246 510,250" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.6" stroke-linecap="round"/>
+  <path d="M 240,265 Q 290,260 340,265" stroke="#FFFFFF" stroke-width="1.5" fill="none" opacity="0.7" stroke-linecap="round"/>
+</svg>

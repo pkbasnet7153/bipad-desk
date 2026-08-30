@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "title": "नारायणी र कोशी नदी बेसिनमा जलसतह खतराको विन्दु नजिक, तटीय क्षेत्रमा उच्च सतर्कता",
+        "titleEn": "Narayani and Koshi river basins near danger level; high alert in riparian areas",
+        "source": "जल तथा मौसम विज्ञान विभाग (DHM)",
+        "time": "2026-08-30 19:24",
+        "category": "river_alert",
+        "level": "DANGER",
+        "content": "चितवन, नवलपरासी, सुनसरी र सप्तरीका तटीय क्षेत्रका बासिन्दाहरूलाई सुरक्षित उच्च स्थानमा रहन अनुरोध गरिएको छ। अर्को २४ घण्टासम्म भारी वर्षाको सम्भावना कायमै छ।"
+    },
+    {
+        "id": 2,
+        "title": "नारायणगढ-मुग्लिन सडकखण्ड तुइन खोलामा पहिरो हटाउने काम जारी, एकतर्फी सुचारु",
+        "titleEn": "Narayangadh-Muglin highway debris clearance underway at Tuin Khola; one-way open",
+        "source": "सडक विभाग (DoR) \/ नेपाल ट्राफिक प्रहरी",
+        "time": "2026-08-30 18:39",
+        "category": "road_update",
+        "level": "WARNING",
+        "content": "पहिरो पन्छाएर साना सवारी साधन एकतर्फी रूपमा पास गराइएको छ। ठूला गाडीलाई सुरक्षित स्थानमा रोकिएको छ।"
+    },
+    {
+        "id": 3,
+        "title": "सिन्धुपाल्चोक र काभ्रेमा नेपाली सेना र सशस्त्र प्रहरीको ५ वटा उद्धार टोली परिचालन",
+        "titleEn": "5 rescue teams deployed by Nepal Army and APF in Sindhupalchok and Kavre",
+        "source": "गृह मन्त्रालय \/ राष्ट्रिय विपद् जोखिम न्यूनीकरण प्राधिकरण (NDRRMA)",
+        "time": "2026-08-30 17:39",
+        "category": "rescue_operation",
+        "level": "INFO",
+        "content": "हालसम्म ८५ जनाको सकुशल उद्धार गरिएको छ। उद्धार सामग्री र डुङ्गा सहित थप टोली तयारी अवस्थामा राखिएको छ।"
+    }
+]

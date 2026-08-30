@@ -1,0 +1,98 @@
+[
+    {
+        "endpoint": "river-stations\/?limit=100",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "duration_ms": 411.25,
+        "timestamp": "2026-08-30 20:21:04",
+        "count": 9223372036854775807
+    },
+    {
+        "endpoint": "river-stations\/?limit=100",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "duration_ms": 473.62,
+        "timestamp": "2026-08-30 20:16:57",
+        "count": 9223372036854775807
+    },
+    {
+        "endpoint": "river-stations\/?limit=100",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "duration_ms": 619.07,
+        "timestamp": "2026-08-30 20:14:21",
+        "count": 9223372036854775807
+    },
+    {
+        "endpoint": "river-stations\/?limit=100",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "duration_ms": 380.52,
+        "timestamp": "2026-08-30 20:10:23",
+        "count": 9223372036854775807
+    },
+    {
+        "endpoint": "river-stations\/?limit=100",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "duration_ms": 395.73,
+        "timestamp": "2026-08-30 19:59:45",
+        "count": 9223372036854775807
+    },
+    {
+        "endpoint": "river-stations\/?limit=100",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "duration_ms": 345.82,
+        "timestamp": "2026-08-30 19:54:51",
+        "count": 9223372036854775807
+    },
+    {
+        "endpoint": "river-stations\/?limit=100",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "duration_ms": 350.78,
+        "timestamp": "2026-08-30 19:51:33",
+        "count": 9223372036854775807
+    },
+    {
+        "endpoint": "river-stations\/?limit=100",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "duration_ms": 334.26,
+        "timestamp": "2026-08-30 19:47:50",
+        "count": 9223372036854775807
+    },
+    {
+        "endpoint": "river-stations\/?limit=100",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "duration_ms": 482.5,
+        "timestamp": "2026-08-30 19:45:35",
+        "count": 9223372036854775807
+    },
+    {
+        "endpoint": "highway\/?limit=30",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "duration_ms": 176.23,
+        "timestamp": "2026-08-30 19:43:08",
+        "count": 9223372036854775807
+    },
+    {
+        "endpoint": "river-stations\/?limit=100",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "duration_ms": 378.83,
+        "timestamp": "2026-08-30 19:43:08",
+        "count": 9223372036854775807
+    },
+    {
+        "endpoint": "river-stations\/?limit=100",
+        "status": "SUCCESS",
+        "statusCode": 200,
+        "duration_ms": 353.35,
+        "timestamp": "2026-08-30 19:39:10",
+        "count": 9223372036854775807
+    }
+]

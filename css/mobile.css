@@ -1,0 +1,127 @@
+/* ==========================================================================
+   Nepal Flood & Disaster Official Government Portals Directory - Mobile CSS
+   ========================================================================== */
+
+@media (max-width: 640px) {
+  .header-inner {
+    height: 62px;
+  }
+
+  .brand-logo {
+    width: 38px;
+    height: 38px;
+  }
+
+  .brand-text h1 {
+    font-size: 0.98rem;
+  }
+
+  .brand-text p {
+    font-size: 0.7rem;
+  }
+
+  .live-ticker-strip {
+    padding: 6px 0;
+    font-size: 0.78rem;
+  }
+
+  .ticker-inner {
+    gap: 8px;
+  }
+
+  .ticker-badge {
+    font-size: 0.65rem;
+    padding: 2px 7px;
+    gap: 4px;
+  }
+
+  .ticker-live-dot {
+    width: 6px;
+    height: 6px;
+  }
+
+  .ticker-item {
+    font-size: 0.78rem;
+    padding-right: 36px;
+  }
+
+  .hero-gateway {
+    padding: 22px 16px;
+    margin-top: 14px;
+    margin-bottom: 18px;
+  }
+
+  .hero-gateway-title {
+    font-size: 1.3rem;
+  }
+
+  .hero-gateway-subtitle {
+    font-size: 0.85rem;
+    margin-bottom: 18px;
+  }
+
+  .hero-search-box input {
+    padding: 12px 16px 12px 42px;
+    font-size: 0.9rem;
+  }
+
+  .hero-stats-row {
+    gap: 14px;
+  }
+
+  .stat-num {
+    font-size: 1.15rem;
+  }
+
+  .stat-txt {
+    font-size: 0.72rem;
+  }
+
+  .hotlines-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+
+  .hotline-card {
+    padding: 10px 12px;
+  }
+
+  .hotline-name {
+    font-size: 0.78rem;
+  }
+
+  .hotline-dial-btn {
+    font-size: 0.78rem;
+  }
+
+  .category-chips-bar {
+    gap: 6px;
+  }
+
+  .cat-chip-btn {
+    padding: 6px 12px;
+    font-size: 0.78rem;
+  }
+
+  .portal-card {
+    padding: 16px;
+  }
+
+  .portal-title {
+    font-size: 1rem;
+  }
+
+  .portal-desc {
+    font-size: 0.8rem;
+  }
+
+  .btn-redirect-primary {
+    font-size: 0.82rem;
+    padding: 8px 12px;
+  }
+
+  .btn-card-util {
+    font-size: 0.75rem;
+    padding: 8px 10px;
+  }
+}

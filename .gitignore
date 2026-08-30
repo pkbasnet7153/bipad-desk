@@ -1,0 +1,7 @@
+# Dependencies & Local Stores
+data/cache/
+*.log
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
