@@ -105,6 +105,11 @@ class DirectoryApp {
           disclaimerModal.classList.remove('active');
         }
       });
+
+      // Auto-open Disclaimer & Civic Declaration Modal on every page load
+      setTimeout(() => {
+        disclaimerModal.classList.add('active');
+      }, 350);
     }
 
     // Speed-Dial Modal Handlers
