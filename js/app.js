@@ -151,6 +151,13 @@ class DirectoryApp {
     if (openSpeedDialBtn && speedDialModal) {
       openSpeedDialBtn.addEventListener('click', () => {
         speedDialModal.classList.toggle('active');
+        if (speedDialModal.classList.contains('active')) {
+          const policeItem = document.querySelector('#speed-dial-grid-container .speed-dial-item[data-number="100"]');
+          if (policeItem) {
+            document.querySelectorAll('#speed-dial-grid-container .speed-dial-item').forEach(i => i.classList.remove('active'));
+            policeItem.classList.add('active');
+          }
+        }
       });
     }
 
@@ -213,7 +220,7 @@ class DirectoryApp {
 
     const lang = window.i18n ? window.i18n.getLang() : 'ne';
     container.innerHTML = this.hotlines.map(h => `
-      <a href="tel:${h.number}" class="speed-dial-item">
+      <a href="tel:${h.number}" class="speed-dial-item ${h.number === '100' ? 'active' : ''}" data-number="${h.number}">
         <div>
           <span>${h.icon}</span>
           <strong style="margin-left: 6px;">${lang === 'ne' ? h.nameNe : h.nameEn}</strong>
@@ -221,6 +228,17 @@ class DirectoryApp {
         <span class="speed-dial-call-badge">📞 ${h.number}</span>
       </a>
     `).join('');
+
+    container.querySelectorAll('.speed-dial-item').forEach(item => {
+      item.addEventListener('mouseenter', () => {
+        container.querySelectorAll('.speed-dial-item').forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+      });
+      item.addEventListener('focus', () => {
+        container.querySelectorAll('.speed-dial-item').forEach(i => i.classList.remove('active'));
+        item.classList.add('active');
+      });
+    });
   }
 
   showToast(message) {

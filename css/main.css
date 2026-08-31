@@ -1152,10 +1152,13 @@ input, textarea, select {
   transition: all var(--transition-fast);
 }
 
-.speed-dial-item:hover {
-  border-color: #DC2626;
-  background-color: #FEF2F2;
+.speed-dial-item:hover,
+.speed-dial-item.active,
+.speed-dial-item:focus {
+  border-color: #DC2626 !important;
+  background-color: #FEF2F2 !important;
   transform: translateY(-1px);
+  box-shadow: 0 2px 8px rgba(220, 38, 38, 0.15);
 }
 
 .speed-dial-call-badge {
