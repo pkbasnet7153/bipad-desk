@@ -5,3 +5,7 @@ data/cache/
 Thumbs.db
 .vscode/
 .idea/
+
+# Implementation Plans & Notes
+implementation_plan.txt
+*_plan.txt
