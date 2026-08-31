@@ -149,21 +149,8 @@
     font-size: 0.72rem;
   }
 
-  .hotlines-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 8px;
-  }
-
-  .hotline-card {
-    padding: 10px 12px;
-  }
-
-  .hotline-name {
-    font-size: 0.78rem;
-  }
-
-  .hotline-dial-btn {
-    font-size: 0.78rem;
+  .hotlines-section {
+    display: none !important;
   }
 
   .category-chips-bar {
