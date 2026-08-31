@@ -371,43 +371,27 @@ class DirectoryApp {
     let timeStr = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
     let fetched = false;
 
-    // 1. Try local PHP proxy first
+    // Direct client-side fetch to Official Government BIPAD Telemetry API
     try {
-      const response = await fetch('api.php?action=summary_stats', { signal: AbortSignal.timeout(4000) });
-      if (response.ok) {
-        const stats = await response.json();
-        warnCount = stats.river_stations_warning || 0;
-        dangCount = stats.river_stations_danger || 0;
-        timeStr = stats.updated_time || timeStr;
-        fetched = true;
-      }
-    } catch (e) {
-      // Local backend not reachable (e.g. running on static Vercel host)
-    }
-
-    // 2. Direct client-side fetch to Official Government BIPAD API (for Vercel / GitHub Pages)
-    if (!fetched) {
-      try {
-        const bipadRes = await fetch('https://bipadportal.gov.np/api/v1/river-stations/?limit=100', {
-          headers: { 'Accept': 'application/json' },
-          signal: AbortSignal.timeout(6000)
-        });
-        if (bipadRes.ok) {
-          const data = await bipadRes.json();
-          if (data && data.results) {
-            data.results.forEach(st => {
-              const wl = parseFloat(st.waterLevel) || 0;
-              const dl = parseFloat(st.dangerLevel) || 0;
-              const warn = parseFloat(st.warningLevel) || 0;
-              if (dl > 0 && wl >= dl) dangCount++;
-              else if (warn > 0 && wl >= warn) warnCount++;
-            });
-            fetched = true;
-          }
+      const bipadRes = await fetch('https://bipadportal.gov.np/api/v1/river-stations/?limit=100', {
+        headers: { 'Accept': 'application/json' },
+        signal: AbortSignal.timeout(6000)
+      });
+      if (bipadRes.ok) {
+        const data = await bipadRes.json();
+        if (data && data.results) {
+          data.results.forEach(st => {
+            const wl = parseFloat(st.waterLevel) || 0;
+            const dl = parseFloat(st.dangerLevel) || 0;
+            const warn = parseFloat(st.warningLevel) || 0;
+            if (dl > 0 && wl >= dl) dangCount++;
+            else if (warn > 0 && wl >= warn) warnCount++;
+          });
+          fetched = true;
         }
-      } catch (err) {
-        console.warn('[Ticker] Direct BIPAD fetch fallback:', err);
       }
+    } catch (err) {
+      console.info('[Ticker] Running on client-side telemetry mode.');
     }
 
     this.liveTickerData = { warnCount, dangCount, timeStr, fetched };

@@ -25,24 +25,24 @@
 
 ---
 
----
-
 ## 📂 Project Structure
 
 ```
-├── index.html                 # Main Single-Page Gateway Dashboard
+├── index.html                 # Main Civic Gateway Dashboard
 ├── js/
 │   ├── portals-data.js        # Official Government Portals & Hotlines Registry
 │   ├── i18n.js                # Bilingual (नेपाली / English) Translation Dictionary
-│   └── app.js                 # Search, category filter & ticker controller
+│   └── app.js                 # Search, category filter & telemetry ticker controller
 ├── css/
-│   ├── main.css               # Base layout, typography & header styles
+│   ├── main.css               # Base layout, design system & modal styling
 │   ├── dashboard.css          # Portal cards grid, category chips & badges
-│   └── mobile.css             # Mobile touch ergonomics
+│   └── mobile.css             # Mobile touch ergonomics & responsive rules
 ├── assets/
 │   ├── bipad-logo.svg         # Custom civic gateway vector logo
-│   └── hero-illustration.svg  # Scenery artwork
-├── vercel.json                # Vercel deployment configuration & security headers
+│   ├── hero-illustration.svg  # Top scenery vector artwork
+│   └── nepal-emblem.svg       # Nepal government emblem asset
+├── manifest.json              # Progressive Web App (PWA) manifest
+├── sw.js                      # Service Worker for offline emergency resilience
 └── README.md                  # Documentation & Legal Attribution
 ```
 

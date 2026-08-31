@@ -1,11 +1,11 @@
-# Dependencies & Local Stores
-data/cache/
-*.log
+# System & Editor files
 .DS_Store
 Thumbs.db
 .vscode/
 .idea/
+*.log
 
-# Implementation Plans & Notes
+# Local Implementation Plans & Scratch Notes
 implementation_plan.txt
 *_plan.txt
+
