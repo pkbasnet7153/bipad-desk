@@ -107,38 +107,6 @@ class DirectoryApp {
       });
     }
 
-    // Donation Modal Handlers
-    const donationModal = document.getElementById('donation-modal');
-    const openDonateBtn = document.getElementById('btn-open-donate');
-
-    if (openDonateBtn && donationModal) {
-      openDonateBtn.addEventListener('click', () => {
-        donationModal.classList.add('active');
-      });
-    }
-
-    const closeDonateBtns = [
-      document.getElementById('btn-close-donate'),
-      document.getElementById('btn-back-donate'),
-      document.getElementById('btn-footer-close-donate')
-    ];
-
-    closeDonateBtns.forEach(btn => {
-      if (btn && donationModal) {
-        btn.addEventListener('click', () => {
-          donationModal.classList.remove('active');
-        });
-      }
-    });
-
-    if (donationModal) {
-      donationModal.addEventListener('click', (e) => {
-        if (e.target === donationModal) {
-          donationModal.classList.remove('active');
-        }
-      });
-    }
-
     // Speed-Dial Modal Handlers
     const speedDialModal = document.getElementById('speed-dial-modal');
     const openSpeedDialBtn = document.getElementById('btn-open-speed-dial');
@@ -181,7 +149,6 @@ class DirectoryApp {
     document.addEventListener('keydown', (e) => {
       if (e.key === 'Escape') {
         if (speedDialModal) speedDialModal.classList.remove('active');
-        if (donationModal) donationModal.classList.remove('active');
         if (disclaimerModal) disclaimerModal.classList.remove('active');
       }
     });

@@ -1,14 +1,14 @@
-const CACHE_NAME = 'bipad-desk-v4.0';
+const CACHE_NAME = 'bipad-desk-v4.1';
 const ASSETS_TO_CACHE = [
   './',
   './index.html',
   './manifest.json',
-  './css/main.css?v=4.0',
-  './css/dashboard.css?v=4.0',
-  './css/mobile.css?v=4.0',
-  './js/portals-data.js?v=4.0',
-  './js/i18n.js?v=4.0',
-  './js/app.js?v=4.0',
+  './css/main.css?v=4.1',
+  './css/dashboard.css?v=4.1',
+  './css/mobile.css?v=4.1',
+  './js/portals-data.js?v=4.1',
+  './js/i18n.js?v=4.1',
+  './js/app.js?v=4.1',
   './assets/bipad-logo.svg',
   './assets/hero-illustration.svg',
   './assets/nepal-emblem.svg'

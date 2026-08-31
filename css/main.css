@@ -197,7 +197,7 @@ input, textarea, select {
 
 .btn-donate-trigger {
   background: linear-gradient(135deg, #DC2626 0%, #B91C1C 100%);
-  color: #FFFFFF;
+  color: #FFFFFF !important;
   border: none;
   font-weight: 700;
   padding: 8px 18px;
@@ -210,6 +210,7 @@ input, textarea, select {
   box-shadow: 0 2px 8px rgba(220, 38, 38, 0.28);
   transition: all var(--transition-fast);
   white-space: nowrap;
+  text-decoration: none;
   font-family: inherit;
 }
 
