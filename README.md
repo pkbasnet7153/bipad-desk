@@ -25,13 +25,6 @@
 
 ---
 
-## 🚀 Instant Deployment on Vercel
-
-```bash
-# Deploy with Vercel CLI
-npx vercel
-```
-
 ---
 
 ## 📂 Project Structure
